@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="error">
+	<appenders>
+		<Console name="console" target="SYSTEM_OUT">
+		    <ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY"/>
+			<PatternLayout charset="GBK"
+				pattern="%d{HH:mm:ss.SSS} %-5level %class line:%L %M() - %msg%xEx%n" />
+		</Console>
+		<RollingFile name="traceFile" fileName="logs/trace.log"
+			filePattern="logs/$${date:yyyy-MM}/trace_%d{yyyy-MM-dd}_%i.log.gz">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %class line:%L %M() - %msg%xEx%n" />
+			<SizeBasedTriggeringPolicy size="100 MB" />
+		</RollingFile>
+		<RollingFile name="infoFile" fileName="logs/info.log"
+			filePattern="logs/$${date:yyyy-MM}/info_%d{yyyy-MM-dd}_%i.log.gz">
+			<ThresholdFilter level="info" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %class line:%L %M() - %msg%xEx%n" />
+			<SizeBasedTriggeringPolicy size="100 MB" />
+		</RollingFile>
+		<File name="errorFile" fileName="logs/error.log" append="true">
+			<ThresholdFilter level="error" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %class line:%L %M() - %msg%xEx%n" />
+		</File>
+	</appenders>
+	
+	<loggers>
+		<root level="trace">
+			<appender-ref ref="console" />
+			<appender-ref ref="traceFile" />
+			<appender-ref ref="infoFile" />
+			<appender-ref ref="errorFile" />
+		</root>
+	</loggers>
+</configuration>

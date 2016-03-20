@@ -1,0 +1,781 @@
+INFO   2016-03-17 14:00:09: org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  loadBeanDefinitions()- Loading XML bean definitions from class path resource [applicationcontext.xml]
+INFO   2016-03-17 14:00:09: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:222  registerDefaultFilters()- JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO   2016-03-17 14:00:09: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:230  registerDefaultFilters()- JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO   2016-03-17 14:00:10: org.springframework.context.support.GenericApplicationContext line:510  prepareRefresh()- Refreshing org.springframework.context.support.GenericApplicationContext@e4f15c3: startup date [Thu Mar 17 14:00:10 CST 2016]; root of context hierarchy
+INFO   2016-03-17 14:00:10: org.springframework.context.support.PropertySourcesPlaceholderConfigurer line:172  loadProperties()- Loading properties file from class path resource [jdbc.properties]
+INFO   2016-03-17 14:00:10: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor line:140  <init>()- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO   2016-03-17 14:00:10: com.mchange.v2.log.MLog line:80  <clinit>()- MLog clients using log4j logging.
+INFO   2016-03-17 14:00:11: com.mchange.v2.c3p0.C3P0Registry line:204  banner()- Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+INFO   2016-03-17 14:00:11: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:285  createNativeEntityManagerFactory()- Building JPA container EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 14:00:11: org.hibernate.cfg.annotations.Version line:15  <clinit>()- Hibernate Annotations 3.4.0.GA
+INFO   2016-03-17 14:00:11: org.hibernate.cfg.Environment line:543  <clinit>()- Hibernate 3.3.0.SP1
+INFO   2016-03-17 14:00:11: org.hibernate.cfg.Environment line:576  <clinit>()- hibernate.properties not found
+INFO   2016-03-17 14:00:11: org.hibernate.cfg.Environment line:709  buildBytecodeProvider()- Bytecode provider name : javassist
+INFO   2016-03-17 14:00:11: org.hibernate.cfg.Environment line:627  <clinit>()- using JDK 1.4 java.sql.Timestamp handling
+INFO   2016-03-17 14:00:11: org.hibernate.annotations.common.Version line:14  <clinit>()- Hibernate Commons Annotations 3.1.0.GA
+INFO   2016-03-17 14:00:11: org.hibernate.ejb.Version line:16  <clinit>()- Hibernate EntityManager 3.4.0.GA
+INFO   2016-03-17 14:00:11: org.hibernate.ejb.Ejb3Configuration line:315  configure()- Processing PersistenceUnitInfo [
+	name: exam
+	...]
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.AnnotationBinder line:419  bindClass()- Binding entity from annotated class: com.exam.bean.ManageOpBasic
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.annotations.EntityBinder line:422  bindTable()- Bind entity com.exam.bean.ManageOpBasic on table t_manage_op_basic
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.AnnotationConfiguration line:369  secondPassCompile()- Hibernate Validator not found: ignoring
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.search.HibernateSearchEventListenerRegister line:53  enableHibernateSearch()- Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO   2016-03-17 14:00:12: org.hibernate.connection.ConnectionProviderFactory line:95  newConnectionProvider()- Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO   2016-03-17 14:00:12: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider line:37  configure()- Using provided datasource
+INFO   2016-03-17 14:00:12: com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource line:462  getPoolManager()- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99f10e4auf13r29oy|1adb3de8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99f10e4auf13r29oy|1adb3de8, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/baoguan?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:116  buildSettings()- RDBMS: MySQL, version: 5.6.26
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:117  buildSettings()- JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.13 ( $Date: 2005-11-17 15:53:48 +0100 (Thu, 17 Nov 2005) $, $Revision$ )
+INFO   2016-03-17 14:00:12: org.hibernate.dialect.Dialect line:175  <init>()- Using dialect: org.hibernate.dialect.OracleDialect
+WARN   2016-03-17 14:00:12: org.hibernate.dialect.Oracle9Dialect line:60  <init>()- The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+WARN   2016-03-17 14:00:12: org.hibernate.dialect.OracleDialect line:49  <init>()- The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+INFO   2016-03-17 14:00:12: org.hibernate.transaction.TransactionFactoryFactory line:62  buildTransactionFactory()- Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+INFO   2016-03-17 14:00:12: org.hibernate.transaction.TransactionManagerLookupFactory line:80  getTransactionManagerLookup()- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:170  buildSettings()- Automatic flush during beforeCompletion(): disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:174  buildSettings()- Automatic session close at end of transaction: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:181  buildSettings()- JDBC batch size: 10
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:184  buildSettings()- JDBC batch updates for versioned data: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:189  buildSettings()- Scrollable result sets: enabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:197  buildSettings()- JDBC3 getGeneratedKeys(): disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:201  buildSettings()- JDBC result set fetch size: 18
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:205  buildSettings()- Connection release mode: auto
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:229  buildSettings()- Maximum outer join fetch depth: 3
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:232  buildSettings()- Default batch fetch size: 1
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:236  buildSettings()- Generate SQL with comments: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:240  buildSettings()- Order SQL updates by primary key: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:244  buildSettings()- Order SQL inserts for batching: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:420  createQueryTranslatorFactory()- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO   2016-03-17 14:00:12: org.hibernate.hql.ast.ASTQueryTranslatorFactory line:47  <init>()- Using ASTQueryTranslatorFactory
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:252  buildSettings()- Query language substitutions: {}
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:257  buildSettings()- JPA-QL strict compliance: enabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:262  buildSettings()- Second-level cache: enabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:266  buildSettings()- Query cache: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:405  createRegionFactory()- Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:276  buildSettings()- Optimize cache for minimal puts: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:285  buildSettings()- Structured second-level cache entries: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:305  buildSettings()- Echoing all SQL to stdout
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:314  buildSettings()- Statistics: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:318  buildSettings()- Deleted entity synthetic identifier rollback: disabled
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:333  buildSettings()- Default entity-mode: pojo
+INFO   2016-03-17 14:00:12: org.hibernate.cfg.SettingsFactory line:337  buildSettings()- Named query checking : enabled
+INFO   2016-03-17 14:00:12: org.hibernate.impl.SessionFactoryImpl line:187  <init>()- building session factory
+INFO   2016-03-17 14:00:13: org.hibernate.impl.SessionFactoryObjectFactory line:105  addInstance()- Not binding factory to JNDI, no JNDI name configured
+INFO   2016-03-17 14:00:13: org.hibernate.tool.hbm2ddl.SchemaUpdate line:138  execute()- Running hbm2ddl schema update
+INFO   2016-03-17 14:00:13: org.hibernate.tool.hbm2ddl.SchemaUpdate line:149  execute()- fetching database metadata
+ERROR  2016-03-17 14:00:13: org.hibernate.tool.hbm2ddl.SchemaUpdate line:157  execute()- could not get database metadata
+java.sql.SQLException: Table 'baoguan.user_sequences' doesn't exist
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2975)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1600)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1695)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:2998)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:2927)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:956)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.executeQuery(NewProxyStatement.java:35)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:151)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:69)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:62)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:152)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:346)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:288)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1117)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:922)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:106)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:57)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:103)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:73)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:313)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+ERROR  2016-03-17 14:00:13: org.hibernate.tool.hbm2ddl.SchemaUpdate line:188  execute()- could not complete schema update
+java.sql.SQLException: Table 'baoguan.user_sequences' doesn't exist
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2975)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1600)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:1695)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:2998)
+	at com.mysql.jdbc.Connection.execSQL(Connection.java:2927)
+	at com.mysql.jdbc.Statement.executeQuery(Statement.java:956)
+	at com.mchange.v2.c3p0.impl.NewProxyStatement.executeQuery(NewProxyStatement.java:35)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.initSequences(DatabaseMetadata.java:151)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:69)
+	at org.hibernate.tool.hbm2ddl.DatabaseMetadata.<init>(DatabaseMetadata.java:62)
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:152)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:346)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at org.hibernate.ejb.Ejb3Configuration.buildEntityManagerFactory(Ejb3Configuration.java:669)
+	at org.hibernate.ejb.HibernatePersistence.createContainerEntityManagerFactory(HibernatePersistence.java:132)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:288)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:310)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1117)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:922)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:106)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:57)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:103)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:73)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:313)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+INFO   2016-03-17 14:00:13: org.springframework.beans.factory.support.DefaultListableBeanFactory line:596  preInstantiateSingletons()- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@563c591c: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 14:00:13: org.hibernate.type.TimestampType line:203  nullSafeGet()- could not read column value from result set: create2_0_; Cannot convert value '1428631233000' from column 2 to TIMESTAMP.
+WARN   2016-03-17 14:00:13: org.hibernate.util.JDBCExceptionReporter line:100  logExceptions()- SQL Error: 0, SQLState: S1009
+ERROR  2016-03-17 14:00:13: org.hibernate.util.JDBCExceptionReporter line:101  logExceptions()- Cannot convert value '1428631233000' from column 2 to TIMESTAMP.
+INFO   2016-03-17 14:00:13: org.springframework.context.support.GenericApplicationContext line:1042  doClose()- Closing org.springframework.context.support.GenericApplicationContext@e4f15c3: startup date [Thu Mar 17 14:00:10 CST 2016]; root of context hierarchy
+INFO   2016-03-17 14:00:13: org.springframework.beans.factory.support.DefaultListableBeanFactory line:444  destroySingletons()- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@563c591c: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 14:00:13: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:441  destroy()- Closing JPA EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 14:00:13: org.hibernate.impl.SessionFactoryImpl line:805  close()- closing
+INFO   2016-03-17 14:00:53: org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  loadBeanDefinitions()- Loading XML bean definitions from class path resource [applicationcontext.xml]
+INFO   2016-03-17 14:00:53: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:222  registerDefaultFilters()- JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO   2016-03-17 14:00:53: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:230  registerDefaultFilters()- JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO   2016-03-17 14:00:53: org.springframework.context.support.GenericApplicationContext line:510  prepareRefresh()- Refreshing org.springframework.context.support.GenericApplicationContext@46a7041a: startup date [Thu Mar 17 14:00:53 CST 2016]; root of context hierarchy
+INFO   2016-03-17 14:00:53: org.springframework.context.support.PropertySourcesPlaceholderConfigurer line:172  loadProperties()- Loading properties file from class path resource [jdbc.properties]
+INFO   2016-03-17 14:00:53: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor line:140  <init>()- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO   2016-03-17 14:00:54: com.mchange.v2.log.MLog line:80  <clinit>()- MLog clients using log4j logging.
+INFO   2016-03-17 14:00:54: com.mchange.v2.c3p0.C3P0Registry line:204  banner()- Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+INFO   2016-03-17 14:00:54: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:285  createNativeEntityManagerFactory()- Building JPA container EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 14:00:54: org.hibernate.cfg.annotations.Version line:15  <clinit>()- Hibernate Annotations 3.4.0.GA
+INFO   2016-03-17 14:00:54: org.hibernate.cfg.Environment line:543  <clinit>()- Hibernate 3.3.0.SP1
+INFO   2016-03-17 14:00:54: org.hibernate.cfg.Environment line:576  <clinit>()- hibernate.properties not found
+INFO   2016-03-17 14:00:54: org.hibernate.cfg.Environment line:709  buildBytecodeProvider()- Bytecode provider name : javassist
+INFO   2016-03-17 14:00:54: org.hibernate.cfg.Environment line:627  <clinit>()- using JDK 1.4 java.sql.Timestamp handling
+INFO   2016-03-17 14:00:54: org.hibernate.annotations.common.Version line:14  <clinit>()- Hibernate Commons Annotations 3.1.0.GA
+INFO   2016-03-17 14:00:54: org.hibernate.ejb.Version line:16  <clinit>()- Hibernate EntityManager 3.4.0.GA
+INFO   2016-03-17 14:00:54: org.hibernate.ejb.Ejb3Configuration line:315  configure()- Processing PersistenceUnitInfo [
+	name: exam
+	...]
+INFO   2016-03-17 14:00:54: org.hibernate.cfg.AnnotationBinder line:419  bindClass()- Binding entity from annotated class: com.exam.bean.ManageOpBasic
+INFO   2016-03-17 14:00:54: org.hibernate.cfg.annotations.EntityBinder line:422  bindTable()- Bind entity com.exam.bean.ManageOpBasic on table t_manage_op_basic
+INFO   2016-03-17 14:00:54: org.hibernate.cfg.AnnotationConfiguration line:369  secondPassCompile()- Hibernate Validator not found: ignoring
+INFO   2016-03-17 14:00:54: org.hibernate.cfg.search.HibernateSearchEventListenerRegister line:53  enableHibernateSearch()- Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO   2016-03-17 14:00:54: org.hibernate.connection.ConnectionProviderFactory line:95  newConnectionProvider()- Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO   2016-03-17 14:00:54: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider line:37  configure()- Using provided datasource
+INFO   2016-03-17 14:00:55: com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource line:462  getPoolManager()- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99f10e584k84cs0l|4daa70ef, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99f10e584k84cs0l|4daa70ef, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/baoguan?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:116  buildSettings()- RDBMS: MySQL, version: 5.6.26
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:117  buildSettings()- JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.13 ( $Date: 2005-11-17 15:53:48 +0100 (Thu, 17 Nov 2005) $, $Revision$ )
+INFO   2016-03-17 14:00:55: org.hibernate.dialect.Dialect line:175  <init>()- Using dialect: org.hibernate.dialect.OracleDialect
+WARN   2016-03-17 14:00:55: org.hibernate.dialect.Oracle9Dialect line:60  <init>()- The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+WARN   2016-03-17 14:00:55: org.hibernate.dialect.OracleDialect line:49  <init>()- The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+INFO   2016-03-17 14:00:55: org.hibernate.transaction.TransactionFactoryFactory line:62  buildTransactionFactory()- Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+INFO   2016-03-17 14:00:55: org.hibernate.transaction.TransactionManagerLookupFactory line:80  getTransactionManagerLookup()- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:170  buildSettings()- Automatic flush during beforeCompletion(): disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:174  buildSettings()- Automatic session close at end of transaction: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:181  buildSettings()- JDBC batch size: 10
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:184  buildSettings()- JDBC batch updates for versioned data: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:189  buildSettings()- Scrollable result sets: enabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:197  buildSettings()- JDBC3 getGeneratedKeys(): disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:201  buildSettings()- JDBC result set fetch size: 18
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:205  buildSettings()- Connection release mode: auto
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:229  buildSettings()- Maximum outer join fetch depth: 3
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:232  buildSettings()- Default batch fetch size: 1
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:236  buildSettings()- Generate SQL with comments: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:240  buildSettings()- Order SQL updates by primary key: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:244  buildSettings()- Order SQL inserts for batching: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:420  createQueryTranslatorFactory()- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO   2016-03-17 14:00:55: org.hibernate.hql.ast.ASTQueryTranslatorFactory line:47  <init>()- Using ASTQueryTranslatorFactory
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:252  buildSettings()- Query language substitutions: {}
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:257  buildSettings()- JPA-QL strict compliance: enabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:262  buildSettings()- Second-level cache: enabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:266  buildSettings()- Query cache: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:405  createRegionFactory()- Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:276  buildSettings()- Optimize cache for minimal puts: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:285  buildSettings()- Structured second-level cache entries: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:305  buildSettings()- Echoing all SQL to stdout
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:314  buildSettings()- Statistics: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:318  buildSettings()- Deleted entity synthetic identifier rollback: disabled
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:333  buildSettings()- Default entity-mode: pojo
+INFO   2016-03-17 14:00:55: org.hibernate.cfg.SettingsFactory line:337  buildSettings()- Named query checking : enabled
+INFO   2016-03-17 14:00:55: org.hibernate.impl.SessionFactoryImpl line:187  <init>()- building session factory
+INFO   2016-03-17 14:00:55: org.hibernate.impl.SessionFactoryObjectFactory line:105  addInstance()- Not binding factory to JNDI, no JNDI name configured
+INFO   2016-03-17 14:00:55: org.springframework.beans.factory.support.DefaultListableBeanFactory line:596  preInstantiateSingletons()- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b3d128f: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 14:00:55: org.hibernate.type.TimestampType line:203  nullSafeGet()- could not read column value from result set: create2_0_; Cannot convert value '1428631233000' from column 2 to TIMESTAMP.
+WARN   2016-03-17 14:00:55: org.hibernate.util.JDBCExceptionReporter line:100  logExceptions()- SQL Error: 0, SQLState: S1009
+ERROR  2016-03-17 14:00:55: org.hibernate.util.JDBCExceptionReporter line:101  logExceptions()- Cannot convert value '1428631233000' from column 2 to TIMESTAMP.
+INFO   2016-03-17 14:00:55: org.springframework.context.support.GenericApplicationContext line:1042  doClose()- Closing org.springframework.context.support.GenericApplicationContext@46a7041a: startup date [Thu Mar 17 14:00:53 CST 2016]; root of context hierarchy
+INFO   2016-03-17 14:00:55: org.springframework.beans.factory.support.DefaultListableBeanFactory line:444  destroySingletons()- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b3d128f: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 14:00:55: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:441  destroy()- Closing JPA EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 14:00:55: org.hibernate.impl.SessionFactoryImpl line:805  close()- closing
+INFO   2016-03-17 18:59:52: org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  loadBeanDefinitions()- Loading XML bean definitions from class path resource [applicationcontext.xml]
+INFO   2016-03-17 18:59:52: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:222  registerDefaultFilters()- JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO   2016-03-17 18:59:52: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:230  registerDefaultFilters()- JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO   2016-03-17 18:59:52: org.springframework.context.support.GenericApplicationContext line:510  prepareRefresh()- Refreshing org.springframework.context.support.GenericApplicationContext@2d6c73b1: startup date [Thu Mar 17 18:59:52 CST 2016]; root of context hierarchy
+INFO   2016-03-17 18:59:52: org.springframework.context.support.PropertySourcesPlaceholderConfigurer line:172  loadProperties()- Loading properties file from class path resource [jdbc.properties]
+INFO   2016-03-17 18:59:52: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor line:140  <init>()- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO   2016-03-17 18:59:53: com.mchange.v2.log.MLog line:80  <clinit>()- MLog clients using log4j logging.
+INFO   2016-03-17 18:59:53: com.mchange.v2.c3p0.C3P0Registry line:204  banner()- Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+INFO   2016-03-17 18:59:53: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:285  createNativeEntityManagerFactory()- Building JPA container EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 18:59:53: org.hibernate.cfg.annotations.Version line:15  <clinit>()- Hibernate Annotations 3.4.0.GA
+INFO   2016-03-17 18:59:53: org.hibernate.cfg.Environment line:543  <clinit>()- Hibernate 3.3.0.SP1
+INFO   2016-03-17 18:59:53: org.hibernate.cfg.Environment line:576  <clinit>()- hibernate.properties not found
+INFO   2016-03-17 18:59:53: org.hibernate.cfg.Environment line:709  buildBytecodeProvider()- Bytecode provider name : javassist
+INFO   2016-03-17 18:59:53: org.hibernate.cfg.Environment line:627  <clinit>()- using JDK 1.4 java.sql.Timestamp handling
+INFO   2016-03-17 18:59:53: org.hibernate.annotations.common.Version line:14  <clinit>()- Hibernate Commons Annotations 3.1.0.GA
+INFO   2016-03-17 18:59:53: org.hibernate.ejb.Version line:16  <clinit>()- Hibernate EntityManager 3.4.0.GA
+INFO   2016-03-17 18:59:53: org.hibernate.ejb.Ejb3Configuration line:315  configure()- Processing PersistenceUnitInfo [
+	name: exam
+	...]
+INFO   2016-03-17 18:59:53: org.hibernate.cfg.AnnotationBinder line:419  bindClass()- Binding entity from annotated class: com.exam.bean.ManageOpBasic
+INFO   2016-03-17 18:59:53: org.hibernate.cfg.annotations.EntityBinder line:422  bindTable()- Bind entity com.exam.bean.ManageOpBasic on table t_manage_op_basic
+INFO   2016-03-17 18:59:53: org.hibernate.cfg.AnnotationConfiguration line:369  secondPassCompile()- Hibernate Validator not found: ignoring
+INFO   2016-03-17 18:59:53: org.hibernate.cfg.search.HibernateSearchEventListenerRegister line:53  enableHibernateSearch()- Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO   2016-03-17 18:59:54: org.hibernate.connection.ConnectionProviderFactory line:95  newConnectionProvider()- Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO   2016-03-17 18:59:54: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider line:37  configure()- Using provided datasource
+INFO   2016-03-17 18:59:54: com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource line:462  getPoolManager()- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99f10otq2814sdkon|d351f72, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99f10otq2814sdkon|d351f72, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/baoguan?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:116  buildSettings()- RDBMS: MySQL, version: 5.6.26
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:117  buildSettings()- JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.13 ( $Date: 2005-11-17 15:53:48 +0100 (Thu, 17 Nov 2005) $, $Revision$ )
+INFO   2016-03-17 18:59:54: org.hibernate.dialect.Dialect line:175  <init>()- Using dialect: org.hibernate.dialect.MySQLDialect
+INFO   2016-03-17 18:59:54: org.hibernate.transaction.TransactionFactoryFactory line:62  buildTransactionFactory()- Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+INFO   2016-03-17 18:59:54: org.hibernate.transaction.TransactionManagerLookupFactory line:80  getTransactionManagerLookup()- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:170  buildSettings()- Automatic flush during beforeCompletion(): disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:174  buildSettings()- Automatic session close at end of transaction: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:181  buildSettings()- JDBC batch size: 10
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:184  buildSettings()- JDBC batch updates for versioned data: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:189  buildSettings()- Scrollable result sets: enabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:197  buildSettings()- JDBC3 getGeneratedKeys(): enabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:201  buildSettings()- JDBC result set fetch size: 18
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:205  buildSettings()- Connection release mode: auto
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:229  buildSettings()- Maximum outer join fetch depth: 3
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:232  buildSettings()- Default batch fetch size: 1
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:236  buildSettings()- Generate SQL with comments: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:240  buildSettings()- Order SQL updates by primary key: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:244  buildSettings()- Order SQL inserts for batching: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:420  createQueryTranslatorFactory()- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO   2016-03-17 18:59:54: org.hibernate.hql.ast.ASTQueryTranslatorFactory line:47  <init>()- Using ASTQueryTranslatorFactory
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:252  buildSettings()- Query language substitutions: {}
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:257  buildSettings()- JPA-QL strict compliance: enabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:262  buildSettings()- Second-level cache: enabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:266  buildSettings()- Query cache: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:405  createRegionFactory()- Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:276  buildSettings()- Optimize cache for minimal puts: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:285  buildSettings()- Structured second-level cache entries: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:305  buildSettings()- Echoing all SQL to stdout
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:314  buildSettings()- Statistics: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:318  buildSettings()- Deleted entity synthetic identifier rollback: disabled
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:333  buildSettings()- Default entity-mode: pojo
+INFO   2016-03-17 18:59:54: org.hibernate.cfg.SettingsFactory line:337  buildSettings()- Named query checking : enabled
+INFO   2016-03-17 18:59:54: org.hibernate.impl.SessionFactoryImpl line:187  <init>()- building session factory
+INFO   2016-03-17 18:59:54: org.hibernate.impl.SessionFactoryObjectFactory line:105  addInstance()- Not binding factory to JNDI, no JNDI name configured
+INFO   2016-03-17 18:59:54: org.hibernate.tool.hbm2ddl.SchemaUpdate line:138  execute()- Running hbm2ddl schema update
+INFO   2016-03-17 18:59:54: org.hibernate.tool.hbm2ddl.SchemaUpdate line:149  execute()- fetching database metadata
+INFO   2016-03-17 18:59:54: org.hibernate.tool.hbm2ddl.SchemaUpdate line:161  execute()- updating schema
+INFO   2016-03-17 18:59:54: org.hibernate.tool.hbm2ddl.TableMetadata line:62  <init>()- table found: baoguan.t_manage_op_basic
+INFO   2016-03-17 18:59:54: org.hibernate.tool.hbm2ddl.TableMetadata line:63  <init>()- columns: [id, op_id, is_active, status, real_name, login_name, create_time, op_type, user_id, op_name, password]
+INFO   2016-03-17 18:59:54: org.hibernate.tool.hbm2ddl.TableMetadata line:65  <init>()- foreign keys: []
+INFO   2016-03-17 18:59:54: org.hibernate.tool.hbm2ddl.TableMetadata line:66  <init>()- indexes: [id]
+INFO   2016-03-17 18:59:54: org.hibernate.tool.hbm2ddl.SchemaUpdate line:183  execute()- schema update complete
+INFO   2016-03-17 18:59:54: org.springframework.beans.factory.support.DefaultListableBeanFactory line:596  preInstantiateSingletons()- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c15d87c: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+WARN   2016-03-17 18:59:54: org.hibernate.util.JDBCExceptionReporter line:100  logExceptions()- SQL Error: 0, SQLState: 22001
+ERROR  2016-03-17 18:59:54: org.hibernate.util.JDBCExceptionReporter line:101  logExceptions()- Data truncation: Incorrect date value: '' for column 'create_time' at row 1
+INFO   2016-03-17 18:59:54: org.springframework.context.support.GenericApplicationContext line:1042  doClose()- Closing org.springframework.context.support.GenericApplicationContext@2d6c73b1: startup date [Thu Mar 17 18:59:52 CST 2016]; root of context hierarchy
+INFO   2016-03-17 18:59:54: org.springframework.beans.factory.support.DefaultListableBeanFactory line:444  destroySingletons()- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c15d87c: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 18:59:54: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:441  destroy()- Closing JPA EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 18:59:54: org.hibernate.impl.SessionFactoryImpl line:805  close()- closing
+INFO   2016-03-17 19:04:23: org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  loadBeanDefinitions()- Loading XML bean definitions from class path resource [applicationcontext.xml]
+INFO   2016-03-17 19:04:23: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:222  registerDefaultFilters()- JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO   2016-03-17 19:04:23: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:230  registerDefaultFilters()- JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO   2016-03-17 19:04:24: org.springframework.context.support.GenericApplicationContext line:510  prepareRefresh()- Refreshing org.springframework.context.support.GenericApplicationContext@655d2b5e: startup date [Thu Mar 17 19:04:24 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:04:24: org.springframework.context.support.PropertySourcesPlaceholderConfigurer line:172  loadProperties()- Loading properties file from class path resource [jdbc.properties]
+INFO   2016-03-17 19:04:24: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor line:140  <init>()- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO   2016-03-17 19:04:24: com.mchange.v2.log.MLog line:80  <clinit>()- MLog clients using log4j logging.
+INFO   2016-03-17 19:04:24: com.mchange.v2.c3p0.C3P0Registry line:204  banner()- Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+INFO   2016-03-17 19:04:24: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:285  createNativeEntityManagerFactory()- Building JPA container EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:04:24: org.hibernate.cfg.annotations.Version line:15  <clinit>()- Hibernate Annotations 3.4.0.GA
+INFO   2016-03-17 19:04:24: org.hibernate.cfg.Environment line:543  <clinit>()- Hibernate 3.3.0.SP1
+INFO   2016-03-17 19:04:24: org.hibernate.cfg.Environment line:576  <clinit>()- hibernate.properties not found
+INFO   2016-03-17 19:04:24: org.hibernate.cfg.Environment line:709  buildBytecodeProvider()- Bytecode provider name : javassist
+INFO   2016-03-17 19:04:24: org.hibernate.cfg.Environment line:627  <clinit>()- using JDK 1.4 java.sql.Timestamp handling
+INFO   2016-03-17 19:04:24: org.hibernate.annotations.common.Version line:14  <clinit>()- Hibernate Commons Annotations 3.1.0.GA
+INFO   2016-03-17 19:04:24: org.hibernate.ejb.Version line:16  <clinit>()- Hibernate EntityManager 3.4.0.GA
+INFO   2016-03-17 19:04:25: org.hibernate.ejb.Ejb3Configuration line:315  configure()- Processing PersistenceUnitInfo [
+	name: exam
+	...]
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.AnnotationBinder line:419  bindClass()- Binding entity from annotated class: com.exam.bean.ManageOpBasic
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.annotations.EntityBinder line:422  bindTable()- Bind entity com.exam.bean.ManageOpBasic on table t_manage_op_basic
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.AnnotationConfiguration line:369  secondPassCompile()- Hibernate Validator not found: ignoring
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.search.HibernateSearchEventListenerRegister line:53  enableHibernateSearch()- Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO   2016-03-17 19:04:25: org.hibernate.connection.ConnectionProviderFactory line:95  newConnectionProvider()- Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO   2016-03-17 19:04:25: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider line:37  configure()- Using provided datasource
+INFO   2016-03-17 19:04:25: com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource line:462  getPoolManager()- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99f10ozjf6uwcctd|6a92d5c0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99f10ozjf6uwcctd|6a92d5c0, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/baoguan?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:116  buildSettings()- RDBMS: MySQL, version: 5.6.26
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:117  buildSettings()- JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.13 ( $Date: 2005-11-17 15:53:48 +0100 (Thu, 17 Nov 2005) $, $Revision$ )
+INFO   2016-03-17 19:04:25: org.hibernate.dialect.Dialect line:175  <init>()- Using dialect: org.hibernate.dialect.MySQLDialect
+INFO   2016-03-17 19:04:25: org.hibernate.transaction.TransactionFactoryFactory line:62  buildTransactionFactory()- Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+INFO   2016-03-17 19:04:25: org.hibernate.transaction.TransactionManagerLookupFactory line:80  getTransactionManagerLookup()- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:170  buildSettings()- Automatic flush during beforeCompletion(): disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:174  buildSettings()- Automatic session close at end of transaction: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:181  buildSettings()- JDBC batch size: 10
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:184  buildSettings()- JDBC batch updates for versioned data: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:189  buildSettings()- Scrollable result sets: enabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:197  buildSettings()- JDBC3 getGeneratedKeys(): enabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:201  buildSettings()- JDBC result set fetch size: 18
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:205  buildSettings()- Connection release mode: auto
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:229  buildSettings()- Maximum outer join fetch depth: 3
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:232  buildSettings()- Default batch fetch size: 1
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:236  buildSettings()- Generate SQL with comments: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:240  buildSettings()- Order SQL updates by primary key: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:244  buildSettings()- Order SQL inserts for batching: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:420  createQueryTranslatorFactory()- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO   2016-03-17 19:04:25: org.hibernate.hql.ast.ASTQueryTranslatorFactory line:47  <init>()- Using ASTQueryTranslatorFactory
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:252  buildSettings()- Query language substitutions: {}
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:257  buildSettings()- JPA-QL strict compliance: enabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:262  buildSettings()- Second-level cache: enabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:266  buildSettings()- Query cache: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:405  createRegionFactory()- Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:276  buildSettings()- Optimize cache for minimal puts: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:285  buildSettings()- Structured second-level cache entries: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:305  buildSettings()- Echoing all SQL to stdout
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:314  buildSettings()- Statistics: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:318  buildSettings()- Deleted entity synthetic identifier rollback: disabled
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:333  buildSettings()- Default entity-mode: pojo
+INFO   2016-03-17 19:04:25: org.hibernate.cfg.SettingsFactory line:337  buildSettings()- Named query checking : enabled
+INFO   2016-03-17 19:04:25: org.hibernate.impl.SessionFactoryImpl line:187  <init>()- building session factory
+INFO   2016-03-17 19:04:26: org.hibernate.impl.SessionFactoryObjectFactory line:105  addInstance()- Not binding factory to JNDI, no JNDI name configured
+INFO   2016-03-17 19:04:26: org.hibernate.tool.hbm2ddl.SchemaUpdate line:138  execute()- Running hbm2ddl schema update
+INFO   2016-03-17 19:04:26: org.hibernate.tool.hbm2ddl.SchemaUpdate line:149  execute()- fetching database metadata
+INFO   2016-03-17 19:04:26: org.hibernate.tool.hbm2ddl.SchemaUpdate line:161  execute()- updating schema
+INFO   2016-03-17 19:04:26: org.hibernate.tool.hbm2ddl.DatabaseMetadata line:119  getTableMetadata()- table not found: t_manage_op_basic
+INFO   2016-03-17 19:04:26: org.hibernate.tool.hbm2ddl.DatabaseMetadata line:119  getTableMetadata()- table not found: t_manage_op_basic
+INFO   2016-03-17 19:04:26: org.hibernate.tool.hbm2ddl.SchemaUpdate line:183  execute()- schema update complete
+INFO   2016-03-17 19:04:26: org.springframework.beans.factory.support.DefaultListableBeanFactory line:596  preInstantiateSingletons()- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@540c1b0d: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+WARN   2016-03-17 19:04:26: org.hibernate.util.JDBCExceptionReporter line:100  logExceptions()- SQL Error: 0, SQLState: 22001
+ERROR  2016-03-17 19:04:26: org.hibernate.util.JDBCExceptionReporter line:101  logExceptions()- Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1
+INFO   2016-03-17 19:04:26: org.springframework.context.support.GenericApplicationContext line:1042  doClose()- Closing org.springframework.context.support.GenericApplicationContext@655d2b5e: startup date [Thu Mar 17 19:04:24 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:04:26: org.springframework.beans.factory.support.DefaultListableBeanFactory line:444  destroySingletons()- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@540c1b0d: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 19:04:26: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:441  destroy()- Closing JPA EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:04:26: org.hibernate.impl.SessionFactoryImpl line:805  close()- closing
+INFO   2016-03-17 19:12:51: org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  loadBeanDefinitions()- Loading XML bean definitions from class path resource [applicationcontext.xml]
+INFO   2016-03-17 19:12:51: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:222  registerDefaultFilters()- JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO   2016-03-17 19:12:51: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:230  registerDefaultFilters()- JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO   2016-03-17 19:12:51: org.springframework.context.support.GenericApplicationContext line:510  prepareRefresh()- Refreshing org.springframework.context.support.GenericApplicationContext@2d6c73b1: startup date [Thu Mar 17 19:12:51 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:12:52: org.springframework.context.support.PropertySourcesPlaceholderConfigurer line:172  loadProperties()- Loading properties file from class path resource [jdbc.properties]
+INFO   2016-03-17 19:12:52: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor line:140  <init>()- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO   2016-03-17 19:12:52: com.mchange.v2.log.MLog line:80  <clinit>()- MLog clients using log4j logging.
+INFO   2016-03-17 19:12:52: com.mchange.v2.c3p0.C3P0Registry line:204  banner()- Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+INFO   2016-03-17 19:12:52: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:285  createNativeEntityManagerFactory()- Building JPA container EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:12:52: org.hibernate.cfg.annotations.Version line:15  <clinit>()- Hibernate Annotations 3.4.0.GA
+INFO   2016-03-17 19:12:52: org.hibernate.cfg.Environment line:543  <clinit>()- Hibernate 3.3.0.SP1
+INFO   2016-03-17 19:12:52: org.hibernate.cfg.Environment line:576  <clinit>()- hibernate.properties not found
+INFO   2016-03-17 19:12:52: org.hibernate.cfg.Environment line:709  buildBytecodeProvider()- Bytecode provider name : javassist
+INFO   2016-03-17 19:12:52: org.hibernate.cfg.Environment line:627  <clinit>()- using JDK 1.4 java.sql.Timestamp handling
+INFO   2016-03-17 19:12:52: org.hibernate.annotations.common.Version line:14  <clinit>()- Hibernate Commons Annotations 3.1.0.GA
+INFO   2016-03-17 19:12:52: org.hibernate.ejb.Version line:16  <clinit>()- Hibernate EntityManager 3.4.0.GA
+INFO   2016-03-17 19:12:52: org.hibernate.ejb.Ejb3Configuration line:315  configure()- Processing PersistenceUnitInfo [
+	name: exam
+	...]
+INFO   2016-03-17 19:12:52: org.hibernate.cfg.AnnotationBinder line:419  bindClass()- Binding entity from annotated class: com.exam.bean.ManageOpBasic
+INFO   2016-03-17 19:12:52: org.hibernate.cfg.annotations.EntityBinder line:422  bindTable()- Bind entity com.exam.bean.ManageOpBasic on table t_manage_op_basic
+INFO   2016-03-17 19:12:52: org.hibernate.cfg.AnnotationConfiguration line:369  secondPassCompile()- Hibernate Validator not found: ignoring
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.search.HibernateSearchEventListenerRegister line:53  enableHibernateSearch()- Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO   2016-03-17 19:12:53: org.hibernate.connection.ConnectionProviderFactory line:95  newConnectionProvider()- Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO   2016-03-17 19:12:53: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider line:37  configure()- Using provided datasource
+INFO   2016-03-17 19:12:53: com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource line:462  getPoolManager()- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99f10paf5r116inyf|45d7f901, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99f10paf5r116inyf|45d7f901, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/baoguan?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:116  buildSettings()- RDBMS: MySQL, version: 5.6.26
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:117  buildSettings()- JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.13 ( $Date: 2005-11-17 15:53:48 +0100 (Thu, 17 Nov 2005) $, $Revision$ )
+INFO   2016-03-17 19:12:53: org.hibernate.dialect.Dialect line:175  <init>()- Using dialect: org.hibernate.dialect.MySQLDialect
+INFO   2016-03-17 19:12:53: org.hibernate.transaction.TransactionFactoryFactory line:62  buildTransactionFactory()- Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+INFO   2016-03-17 19:12:53: org.hibernate.transaction.TransactionManagerLookupFactory line:80  getTransactionManagerLookup()- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:170  buildSettings()- Automatic flush during beforeCompletion(): disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:174  buildSettings()- Automatic session close at end of transaction: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:181  buildSettings()- JDBC batch size: 10
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:184  buildSettings()- JDBC batch updates for versioned data: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:189  buildSettings()- Scrollable result sets: enabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:197  buildSettings()- JDBC3 getGeneratedKeys(): enabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:201  buildSettings()- JDBC result set fetch size: 18
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:205  buildSettings()- Connection release mode: auto
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:229  buildSettings()- Maximum outer join fetch depth: 3
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:232  buildSettings()- Default batch fetch size: 1
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:236  buildSettings()- Generate SQL with comments: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:240  buildSettings()- Order SQL updates by primary key: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:244  buildSettings()- Order SQL inserts for batching: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:420  createQueryTranslatorFactory()- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO   2016-03-17 19:12:53: org.hibernate.hql.ast.ASTQueryTranslatorFactory line:47  <init>()- Using ASTQueryTranslatorFactory
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:252  buildSettings()- Query language substitutions: {}
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:257  buildSettings()- JPA-QL strict compliance: enabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:262  buildSettings()- Second-level cache: enabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:266  buildSettings()- Query cache: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:405  createRegionFactory()- Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:276  buildSettings()- Optimize cache for minimal puts: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:285  buildSettings()- Structured second-level cache entries: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:305  buildSettings()- Echoing all SQL to stdout
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:314  buildSettings()- Statistics: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:318  buildSettings()- Deleted entity synthetic identifier rollback: disabled
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:333  buildSettings()- Default entity-mode: pojo
+INFO   2016-03-17 19:12:53: org.hibernate.cfg.SettingsFactory line:337  buildSettings()- Named query checking : enabled
+INFO   2016-03-17 19:12:53: org.hibernate.impl.SessionFactoryImpl line:187  <init>()- building session factory
+INFO   2016-03-17 19:12:53: org.hibernate.impl.SessionFactoryObjectFactory line:105  addInstance()- Not binding factory to JNDI, no JNDI name configured
+INFO   2016-03-17 19:12:53: org.hibernate.tool.hbm2ddl.SchemaUpdate line:138  execute()- Running hbm2ddl schema update
+INFO   2016-03-17 19:12:53: org.hibernate.tool.hbm2ddl.SchemaUpdate line:149  execute()- fetching database metadata
+INFO   2016-03-17 19:12:53: org.hibernate.tool.hbm2ddl.SchemaUpdate line:161  execute()- updating schema
+INFO   2016-03-17 19:12:53: org.hibernate.tool.hbm2ddl.TableMetadata line:62  <init>()- table found: baoguan.t_manage_op_basic
+INFO   2016-03-17 19:12:53: org.hibernate.tool.hbm2ddl.TableMetadata line:63  <init>()- columns: [id, op_id, status, is_active, real_name, login_name, op_type, create_time, password, op_name]
+INFO   2016-03-17 19:12:53: org.hibernate.tool.hbm2ddl.TableMetadata line:65  <init>()- foreign keys: []
+INFO   2016-03-17 19:12:53: org.hibernate.tool.hbm2ddl.TableMetadata line:66  <init>()- indexes: [primary]
+INFO   2016-03-17 19:12:53: org.hibernate.tool.hbm2ddl.SchemaUpdate line:183  execute()- schema update complete
+INFO   2016-03-17 19:12:53: org.springframework.beans.factory.support.DefaultListableBeanFactory line:596  preInstantiateSingletons()- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3efb934d: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+WARN   2016-03-17 19:12:53: org.hibernate.util.JDBCExceptionReporter line:100  logExceptions()- SQL Error: 0, SQLState: 22001
+ERROR  2016-03-17 19:12:53: org.hibernate.util.JDBCExceptionReporter line:101  logExceptions()- Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1
+INFO   2016-03-17 19:12:53: org.springframework.context.support.GenericApplicationContext line:1042  doClose()- Closing org.springframework.context.support.GenericApplicationContext@2d6c73b1: startup date [Thu Mar 17 19:12:51 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:12:53: org.springframework.beans.factory.support.DefaultListableBeanFactory line:444  destroySingletons()- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3efb934d: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 19:12:53: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:441  destroy()- Closing JPA EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:12:53: org.hibernate.impl.SessionFactoryImpl line:805  close()- closing
+INFO   2016-03-17 19:16:13: org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  loadBeanDefinitions()- Loading XML bean definitions from class path resource [applicationcontext.xml]
+INFO   2016-03-17 19:16:13: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:222  registerDefaultFilters()- JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO   2016-03-17 19:16:13: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:230  registerDefaultFilters()- JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO   2016-03-17 19:16:13: org.springframework.context.support.GenericApplicationContext line:510  prepareRefresh()- Refreshing org.springframework.context.support.GenericApplicationContext@2d6c73b1: startup date [Thu Mar 17 19:16:13 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:16:14: org.springframework.context.support.PropertySourcesPlaceholderConfigurer line:172  loadProperties()- Loading properties file from class path resource [jdbc.properties]
+INFO   2016-03-17 19:16:14: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor line:140  <init>()- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO   2016-03-17 19:16:14: com.mchange.v2.log.MLog line:80  <clinit>()- MLog clients using log4j logging.
+INFO   2016-03-17 19:16:14: com.mchange.v2.c3p0.C3P0Registry line:204  banner()- Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+INFO   2016-03-17 19:16:14: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:285  createNativeEntityManagerFactory()- Building JPA container EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:16:14: org.hibernate.cfg.annotations.Version line:15  <clinit>()- Hibernate Annotations 3.4.0.GA
+INFO   2016-03-17 19:16:14: org.hibernate.cfg.Environment line:543  <clinit>()- Hibernate 3.3.0.SP1
+INFO   2016-03-17 19:16:14: org.hibernate.cfg.Environment line:576  <clinit>()- hibernate.properties not found
+INFO   2016-03-17 19:16:14: org.hibernate.cfg.Environment line:709  buildBytecodeProvider()- Bytecode provider name : javassist
+INFO   2016-03-17 19:16:14: org.hibernate.cfg.Environment line:627  <clinit>()- using JDK 1.4 java.sql.Timestamp handling
+INFO   2016-03-17 19:16:14: org.hibernate.annotations.common.Version line:14  <clinit>()- Hibernate Commons Annotations 3.1.0.GA
+INFO   2016-03-17 19:16:14: org.hibernate.ejb.Version line:16  <clinit>()- Hibernate EntityManager 3.4.0.GA
+INFO   2016-03-17 19:16:14: org.hibernate.ejb.Ejb3Configuration line:315  configure()- Processing PersistenceUnitInfo [
+	name: exam
+	...]
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.AnnotationBinder line:419  bindClass()- Binding entity from annotated class: com.exam.bean.ManageOpBasic
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.annotations.EntityBinder line:422  bindTable()- Bind entity com.exam.bean.ManageOpBasic on table t_manage_op_basic
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.AnnotationConfiguration line:369  secondPassCompile()- Hibernate Validator not found: ignoring
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.search.HibernateSearchEventListenerRegister line:53  enableHibernateSearch()- Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO   2016-03-17 19:16:15: org.hibernate.connection.ConnectionProviderFactory line:95  newConnectionProvider()- Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO   2016-03-17 19:16:15: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider line:37  configure()- Using provided datasource
+INFO   2016-03-17 19:16:15: com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource line:462  getPoolManager()- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99f10per091r9ibc2|632b2d25, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99f10per091r9ibc2|632b2d25, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/baoguan?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:116  buildSettings()- RDBMS: MySQL, version: 5.6.26
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:117  buildSettings()- JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.13 ( $Date: 2005-11-17 15:53:48 +0100 (Thu, 17 Nov 2005) $, $Revision$ )
+INFO   2016-03-17 19:16:15: org.hibernate.dialect.Dialect line:175  <init>()- Using dialect: org.hibernate.dialect.MySQLDialect
+INFO   2016-03-17 19:16:15: org.hibernate.transaction.TransactionFactoryFactory line:62  buildTransactionFactory()- Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+INFO   2016-03-17 19:16:15: org.hibernate.transaction.TransactionManagerLookupFactory line:80  getTransactionManagerLookup()- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:170  buildSettings()- Automatic flush during beforeCompletion(): disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:174  buildSettings()- Automatic session close at end of transaction: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:181  buildSettings()- JDBC batch size: 10
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:184  buildSettings()- JDBC batch updates for versioned data: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:189  buildSettings()- Scrollable result sets: enabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:197  buildSettings()- JDBC3 getGeneratedKeys(): enabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:201  buildSettings()- JDBC result set fetch size: 18
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:205  buildSettings()- Connection release mode: auto
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:229  buildSettings()- Maximum outer join fetch depth: 3
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:232  buildSettings()- Default batch fetch size: 1
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:236  buildSettings()- Generate SQL with comments: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:240  buildSettings()- Order SQL updates by primary key: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:244  buildSettings()- Order SQL inserts for batching: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:420  createQueryTranslatorFactory()- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO   2016-03-17 19:16:15: org.hibernate.hql.ast.ASTQueryTranslatorFactory line:47  <init>()- Using ASTQueryTranslatorFactory
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:252  buildSettings()- Query language substitutions: {}
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:257  buildSettings()- JPA-QL strict compliance: enabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:262  buildSettings()- Second-level cache: enabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:266  buildSettings()- Query cache: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:405  createRegionFactory()- Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:276  buildSettings()- Optimize cache for minimal puts: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:285  buildSettings()- Structured second-level cache entries: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:305  buildSettings()- Echoing all SQL to stdout
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:314  buildSettings()- Statistics: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:318  buildSettings()- Deleted entity synthetic identifier rollback: disabled
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:333  buildSettings()- Default entity-mode: pojo
+INFO   2016-03-17 19:16:15: org.hibernate.cfg.SettingsFactory line:337  buildSettings()- Named query checking : enabled
+INFO   2016-03-17 19:16:15: org.hibernate.impl.SessionFactoryImpl line:187  <init>()- building session factory
+INFO   2016-03-17 19:16:15: org.hibernate.impl.SessionFactoryObjectFactory line:105  addInstance()- Not binding factory to JNDI, no JNDI name configured
+INFO   2016-03-17 19:16:15: org.hibernate.tool.hbm2ddl.SchemaUpdate line:138  execute()- Running hbm2ddl schema update
+INFO   2016-03-17 19:16:15: org.hibernate.tool.hbm2ddl.SchemaUpdate line:149  execute()- fetching database metadata
+INFO   2016-03-17 19:16:15: org.hibernate.tool.hbm2ddl.SchemaUpdate line:161  execute()- updating schema
+INFO   2016-03-17 19:16:15: org.hibernate.tool.hbm2ddl.TableMetadata line:62  <init>()- table found: baoguan.t_manage_op_basic
+INFO   2016-03-17 19:16:15: org.hibernate.tool.hbm2ddl.TableMetadata line:63  <init>()- columns: [id, op_id, status, is_active, real_name, login_name, op_type, create_time, password, op_name]
+INFO   2016-03-17 19:16:15: org.hibernate.tool.hbm2ddl.TableMetadata line:65  <init>()- foreign keys: []
+INFO   2016-03-17 19:16:15: org.hibernate.tool.hbm2ddl.TableMetadata line:66  <init>()- indexes: [primary]
+INFO   2016-03-17 19:16:15: org.hibernate.tool.hbm2ddl.SchemaUpdate line:183  execute()- schema update complete
+INFO   2016-03-17 19:16:15: org.springframework.beans.factory.support.DefaultListableBeanFactory line:596  preInstantiateSingletons()- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5546f75a: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 19:16:15: org.springframework.context.support.GenericApplicationContext line:1042  doClose()- Closing org.springframework.context.support.GenericApplicationContext@2d6c73b1: startup date [Thu Mar 17 19:16:13 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:16:15: org.springframework.beans.factory.support.DefaultListableBeanFactory line:444  destroySingletons()- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5546f75a: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 19:16:15: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:441  destroy()- Closing JPA EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:16:15: org.hibernate.impl.SessionFactoryImpl line:805  close()- closing
+INFO   2016-03-17 19:17:19: org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  loadBeanDefinitions()- Loading XML bean definitions from class path resource [applicationcontext.xml]
+INFO   2016-03-17 19:17:19: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:222  registerDefaultFilters()- JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO   2016-03-17 19:17:19: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:230  registerDefaultFilters()- JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO   2016-03-17 19:17:19: org.springframework.context.support.GenericApplicationContext line:510  prepareRefresh()- Refreshing org.springframework.context.support.GenericApplicationContext@7782d113: startup date [Thu Mar 17 19:17:19 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:17:20: org.springframework.context.support.PropertySourcesPlaceholderConfigurer line:172  loadProperties()- Loading properties file from class path resource [jdbc.properties]
+INFO   2016-03-17 19:17:20: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor line:140  <init>()- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO   2016-03-17 19:17:20: com.mchange.v2.log.MLog line:80  <clinit>()- MLog clients using log4j logging.
+INFO   2016-03-17 19:17:20: com.mchange.v2.c3p0.C3P0Registry line:204  banner()- Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+INFO   2016-03-17 19:17:20: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:285  createNativeEntityManagerFactory()- Building JPA container EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:17:20: org.hibernate.cfg.annotations.Version line:15  <clinit>()- Hibernate Annotations 3.4.0.GA
+INFO   2016-03-17 19:17:20: org.hibernate.cfg.Environment line:543  <clinit>()- Hibernate 3.3.0.SP1
+INFO   2016-03-17 19:17:20: org.hibernate.cfg.Environment line:576  <clinit>()- hibernate.properties not found
+INFO   2016-03-17 19:17:20: org.hibernate.cfg.Environment line:709  buildBytecodeProvider()- Bytecode provider name : javassist
+INFO   2016-03-17 19:17:20: org.hibernate.cfg.Environment line:627  <clinit>()- using JDK 1.4 java.sql.Timestamp handling
+INFO   2016-03-17 19:17:20: org.hibernate.annotations.common.Version line:14  <clinit>()- Hibernate Commons Annotations 3.1.0.GA
+INFO   2016-03-17 19:17:20: org.hibernate.ejb.Version line:16  <clinit>()- Hibernate EntityManager 3.4.0.GA
+INFO   2016-03-17 19:17:20: org.hibernate.ejb.Ejb3Configuration line:315  configure()- Processing PersistenceUnitInfo [
+	name: exam
+	...]
+INFO   2016-03-17 19:17:20: org.hibernate.cfg.AnnotationBinder line:419  bindClass()- Binding entity from annotated class: com.exam.bean.ManageOpBasic
+INFO   2016-03-17 19:17:20: org.hibernate.cfg.annotations.EntityBinder line:422  bindTable()- Bind entity com.exam.bean.ManageOpBasic on table t_manage_op_basic
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.AnnotationConfiguration line:369  secondPassCompile()- Hibernate Validator not found: ignoring
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.search.HibernateSearchEventListenerRegister line:53  enableHibernateSearch()- Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO   2016-03-17 19:17:21: org.hibernate.connection.ConnectionProviderFactory line:95  newConnectionProvider()- Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO   2016-03-17 19:17:21: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider line:37  configure()- Using provided datasource
+INFO   2016-03-17 19:17:21: com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource line:462  getPoolManager()- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99f10pg5xkqcuz42|3dd94153, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99f10pg5xkqcuz42|3dd94153, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/baoguan?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:116  buildSettings()- RDBMS: MySQL, version: 5.6.26
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:117  buildSettings()- JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.13 ( $Date: 2005-11-17 15:53:48 +0100 (Thu, 17 Nov 2005) $, $Revision$ )
+INFO   2016-03-17 19:17:21: org.hibernate.dialect.Dialect line:175  <init>()- Using dialect: org.hibernate.dialect.MySQLDialect
+INFO   2016-03-17 19:17:21: org.hibernate.transaction.TransactionFactoryFactory line:62  buildTransactionFactory()- Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+INFO   2016-03-17 19:17:21: org.hibernate.transaction.TransactionManagerLookupFactory line:80  getTransactionManagerLookup()- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:170  buildSettings()- Automatic flush during beforeCompletion(): disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:174  buildSettings()- Automatic session close at end of transaction: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:181  buildSettings()- JDBC batch size: 10
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:184  buildSettings()- JDBC batch updates for versioned data: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:189  buildSettings()- Scrollable result sets: enabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:197  buildSettings()- JDBC3 getGeneratedKeys(): enabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:201  buildSettings()- JDBC result set fetch size: 18
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:205  buildSettings()- Connection release mode: auto
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:229  buildSettings()- Maximum outer join fetch depth: 3
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:232  buildSettings()- Default batch fetch size: 1
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:236  buildSettings()- Generate SQL with comments: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:240  buildSettings()- Order SQL updates by primary key: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:244  buildSettings()- Order SQL inserts for batching: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:420  createQueryTranslatorFactory()- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO   2016-03-17 19:17:21: org.hibernate.hql.ast.ASTQueryTranslatorFactory line:47  <init>()- Using ASTQueryTranslatorFactory
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:252  buildSettings()- Query language substitutions: {}
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:257  buildSettings()- JPA-QL strict compliance: enabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:262  buildSettings()- Second-level cache: enabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:266  buildSettings()- Query cache: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:405  createRegionFactory()- Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:276  buildSettings()- Optimize cache for minimal puts: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:285  buildSettings()- Structured second-level cache entries: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:305  buildSettings()- Echoing all SQL to stdout
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:314  buildSettings()- Statistics: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:318  buildSettings()- Deleted entity synthetic identifier rollback: disabled
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:333  buildSettings()- Default entity-mode: pojo
+INFO   2016-03-17 19:17:21: org.hibernate.cfg.SettingsFactory line:337  buildSettings()- Named query checking : enabled
+INFO   2016-03-17 19:17:21: org.hibernate.impl.SessionFactoryImpl line:187  <init>()- building session factory
+INFO   2016-03-17 19:17:21: org.hibernate.impl.SessionFactoryObjectFactory line:105  addInstance()- Not binding factory to JNDI, no JNDI name configured
+INFO   2016-03-17 19:17:21: org.hibernate.tool.hbm2ddl.SchemaUpdate line:138  execute()- Running hbm2ddl schema update
+INFO   2016-03-17 19:17:21: org.hibernate.tool.hbm2ddl.SchemaUpdate line:149  execute()- fetching database metadata
+INFO   2016-03-17 19:17:21: org.hibernate.tool.hbm2ddl.SchemaUpdate line:161  execute()- updating schema
+INFO   2016-03-17 19:17:21: org.hibernate.tool.hbm2ddl.TableMetadata line:62  <init>()- table found: baoguan.t_manage_op_basic
+INFO   2016-03-17 19:17:21: org.hibernate.tool.hbm2ddl.TableMetadata line:63  <init>()- columns: [id, op_id, status, is_active, real_name, login_name, op_type, create_time, password, op_name]
+INFO   2016-03-17 19:17:21: org.hibernate.tool.hbm2ddl.TableMetadata line:65  <init>()- foreign keys: []
+INFO   2016-03-17 19:17:21: org.hibernate.tool.hbm2ddl.TableMetadata line:66  <init>()- indexes: [primary]
+INFO   2016-03-17 19:17:21: org.hibernate.tool.hbm2ddl.SchemaUpdate line:183  execute()- schema update complete
+INFO   2016-03-17 19:17:21: org.springframework.beans.factory.support.DefaultListableBeanFactory line:596  preInstantiateSingletons()- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c4cd88f: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+WARN   2016-03-17 19:17:21: org.hibernate.util.JDBCExceptionReporter line:100  logExceptions()- SQL Error: 0, SQLState: 22001
+ERROR  2016-03-17 19:17:21: org.hibernate.util.JDBCExceptionReporter line:101  logExceptions()- Data truncation: Incorrect datetime value: '' for column 'create_time' at row 1
+INFO   2016-03-17 19:17:21: org.springframework.context.support.GenericApplicationContext line:1042  doClose()- Closing org.springframework.context.support.GenericApplicationContext@7782d113: startup date [Thu Mar 17 19:17:19 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:17:21: org.springframework.beans.factory.support.DefaultListableBeanFactory line:444  destroySingletons()- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c4cd88f: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 19:17:21: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:441  destroy()- Closing JPA EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:17:21: org.hibernate.impl.SessionFactoryImpl line:805  close()- closing
+INFO   2016-03-17 19:26:17: org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  loadBeanDefinitions()- Loading XML bean definitions from class path resource [applicationcontext.xml]
+INFO   2016-03-17 19:26:18: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:222  registerDefaultFilters()- JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO   2016-03-17 19:26:18: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:230  registerDefaultFilters()- JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO   2016-03-17 19:26:18: org.springframework.context.support.GenericApplicationContext line:510  prepareRefresh()- Refreshing org.springframework.context.support.GenericApplicationContext@2d6c73b1: startup date [Thu Mar 17 19:26:18 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:26:18: org.springframework.context.support.PropertySourcesPlaceholderConfigurer line:172  loadProperties()- Loading properties file from class path resource [jdbc.properties]
+INFO   2016-03-17 19:26:18: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor line:140  <init>()- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO   2016-03-17 19:26:18: com.mchange.v2.log.MLog line:80  <clinit>()- MLog clients using log4j logging.
+INFO   2016-03-17 19:26:18: com.mchange.v2.c3p0.C3P0Registry line:204  banner()- Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+INFO   2016-03-17 19:26:19: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:285  createNativeEntityManagerFactory()- Building JPA container EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:26:19: org.hibernate.cfg.annotations.Version line:15  <clinit>()- Hibernate Annotations 3.4.0.GA
+INFO   2016-03-17 19:26:19: org.hibernate.cfg.Environment line:543  <clinit>()- Hibernate 3.3.0.SP1
+INFO   2016-03-17 19:26:19: org.hibernate.cfg.Environment line:576  <clinit>()- hibernate.properties not found
+INFO   2016-03-17 19:26:19: org.hibernate.cfg.Environment line:709  buildBytecodeProvider()- Bytecode provider name : javassist
+INFO   2016-03-17 19:26:19: org.hibernate.cfg.Environment line:627  <clinit>()- using JDK 1.4 java.sql.Timestamp handling
+INFO   2016-03-17 19:26:19: org.hibernate.annotations.common.Version line:14  <clinit>()- Hibernate Commons Annotations 3.1.0.GA
+INFO   2016-03-17 19:26:19: org.hibernate.ejb.Version line:16  <clinit>()- Hibernate EntityManager 3.4.0.GA
+INFO   2016-03-17 19:26:19: org.hibernate.ejb.Ejb3Configuration line:315  configure()- Processing PersistenceUnitInfo [
+	name: exam
+	...]
+INFO   2016-03-17 19:26:19: org.hibernate.cfg.AnnotationBinder line:419  bindClass()- Binding entity from annotated class: com.exam.bean.ManageOpBasic
+INFO   2016-03-17 19:26:19: org.hibernate.cfg.annotations.EntityBinder line:422  bindTable()- Bind entity com.exam.bean.ManageOpBasic on table t_manage_op_basic
+INFO   2016-03-17 19:26:19: org.hibernate.cfg.AnnotationConfiguration line:369  secondPassCompile()- Hibernate Validator not found: ignoring
+INFO   2016-03-17 19:26:19: org.hibernate.cfg.search.HibernateSearchEventListenerRegister line:53  enableHibernateSearch()- Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO   2016-03-17 19:26:19: org.hibernate.connection.ConnectionProviderFactory line:95  newConnectionProvider()- Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO   2016-03-17 19:26:19: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider line:37  configure()- Using provided datasource
+INFO   2016-03-17 19:26:19: com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource line:462  getPoolManager()- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99f10prpfh16pu3sd|1aa37c24, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99f10prpfh16pu3sd|1aa37c24, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/baoguan?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:116  buildSettings()- RDBMS: MySQL, version: 5.6.26
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:117  buildSettings()- JDBC driver: MySQL Connector Java, version: mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )
+INFO   2016-03-17 19:26:20: org.hibernate.dialect.Dialect line:175  <init>()- Using dialect: org.hibernate.dialect.MySQLDialect
+INFO   2016-03-17 19:26:20: org.hibernate.transaction.TransactionFactoryFactory line:62  buildTransactionFactory()- Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+INFO   2016-03-17 19:26:20: org.hibernate.transaction.TransactionManagerLookupFactory line:80  getTransactionManagerLookup()- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:170  buildSettings()- Automatic flush during beforeCompletion(): disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:174  buildSettings()- Automatic session close at end of transaction: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:181  buildSettings()- JDBC batch size: 10
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:184  buildSettings()- JDBC batch updates for versioned data: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:189  buildSettings()- Scrollable result sets: enabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:197  buildSettings()- JDBC3 getGeneratedKeys(): enabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:201  buildSettings()- JDBC result set fetch size: 18
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:205  buildSettings()- Connection release mode: auto
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:229  buildSettings()- Maximum outer join fetch depth: 3
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:232  buildSettings()- Default batch fetch size: 1
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:236  buildSettings()- Generate SQL with comments: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:240  buildSettings()- Order SQL updates by primary key: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:244  buildSettings()- Order SQL inserts for batching: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:420  createQueryTranslatorFactory()- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO   2016-03-17 19:26:20: org.hibernate.hql.ast.ASTQueryTranslatorFactory line:47  <init>()- Using ASTQueryTranslatorFactory
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:252  buildSettings()- Query language substitutions: {}
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:257  buildSettings()- JPA-QL strict compliance: enabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:262  buildSettings()- Second-level cache: enabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:266  buildSettings()- Query cache: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:405  createRegionFactory()- Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:276  buildSettings()- Optimize cache for minimal puts: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:285  buildSettings()- Structured second-level cache entries: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:305  buildSettings()- Echoing all SQL to stdout
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:314  buildSettings()- Statistics: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:318  buildSettings()- Deleted entity synthetic identifier rollback: disabled
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:333  buildSettings()- Default entity-mode: pojo
+INFO   2016-03-17 19:26:20: org.hibernate.cfg.SettingsFactory line:337  buildSettings()- Named query checking : enabled
+INFO   2016-03-17 19:26:20: org.hibernate.impl.SessionFactoryImpl line:187  <init>()- building session factory
+INFO   2016-03-17 19:26:20: org.hibernate.impl.SessionFactoryObjectFactory line:105  addInstance()- Not binding factory to JNDI, no JNDI name configured
+INFO   2016-03-17 19:26:20: org.hibernate.tool.hbm2ddl.SchemaUpdate line:138  execute()- Running hbm2ddl schema update
+INFO   2016-03-17 19:26:20: org.hibernate.tool.hbm2ddl.SchemaUpdate line:149  execute()- fetching database metadata
+INFO   2016-03-17 19:26:20: org.hibernate.tool.hbm2ddl.SchemaUpdate line:161  execute()- updating schema
+INFO   2016-03-17 19:26:20: org.hibernate.tool.hbm2ddl.TableMetadata line:62  <init>()- table found: baoguan.t_manage_op_basic
+INFO   2016-03-17 19:26:20: org.hibernate.tool.hbm2ddl.TableMetadata line:63  <init>()- columns: [id, op_id, status, is_active, real_name, login_name, op_type, create_time, password, op_name]
+INFO   2016-03-17 19:26:20: org.hibernate.tool.hbm2ddl.TableMetadata line:65  <init>()- foreign keys: []
+INFO   2016-03-17 19:26:20: org.hibernate.tool.hbm2ddl.TableMetadata line:66  <init>()- indexes: [primary]
+INFO   2016-03-17 19:26:20: org.hibernate.tool.hbm2ddl.SchemaUpdate line:183  execute()- schema update complete
+INFO   2016-03-17 19:26:20: org.springframework.beans.factory.support.DefaultListableBeanFactory line:596  preInstantiateSingletons()- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2e37dbea: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 19:26:20: org.springframework.context.support.GenericApplicationContext line:1042  doClose()- Closing org.springframework.context.support.GenericApplicationContext@2d6c73b1: startup date [Thu Mar 17 19:26:18 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:26:20: org.springframework.beans.factory.support.DefaultListableBeanFactory line:444  destroySingletons()- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2e37dbea: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 19:26:20: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:441  destroy()- Closing JPA EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:26:20: org.hibernate.impl.SessionFactoryImpl line:805  close()- closing
+INFO   2016-03-17 19:27:36: org.springframework.beans.factory.xml.XmlBeanDefinitionReader line:315  loadBeanDefinitions()- Loading XML bean definitions from class path resource [applicationcontext.xml]
+INFO   2016-03-17 19:27:36: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:222  registerDefaultFilters()- JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+INFO   2016-03-17 19:27:36: org.springframework.context.annotation.ClassPathBeanDefinitionScanner line:230  registerDefaultFilters()- JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+INFO   2016-03-17 19:27:36: org.springframework.context.support.GenericApplicationContext line:510  prepareRefresh()- Refreshing org.springframework.context.support.GenericApplicationContext@7d612fb3: startup date [Thu Mar 17 19:27:36 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:27:36: org.springframework.context.support.PropertySourcesPlaceholderConfigurer line:172  loadProperties()- Loading properties file from class path resource [jdbc.properties]
+INFO   2016-03-17 19:27:36: org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor line:140  <init>()- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO   2016-03-17 19:27:37: com.mchange.v2.log.MLog line:80  <clinit>()- MLog clients using log4j logging.
+INFO   2016-03-17 19:27:37: com.mchange.v2.c3p0.C3P0Registry line:204  banner()- Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+INFO   2016-03-17 19:27:37: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:285  createNativeEntityManagerFactory()- Building JPA container EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:27:37: org.hibernate.cfg.annotations.Version line:15  <clinit>()- Hibernate Annotations 3.4.0.GA
+INFO   2016-03-17 19:27:37: org.hibernate.cfg.Environment line:543  <clinit>()- Hibernate 3.3.0.SP1
+INFO   2016-03-17 19:27:37: org.hibernate.cfg.Environment line:576  <clinit>()- hibernate.properties not found
+INFO   2016-03-17 19:27:37: org.hibernate.cfg.Environment line:709  buildBytecodeProvider()- Bytecode provider name : javassist
+INFO   2016-03-17 19:27:37: org.hibernate.cfg.Environment line:627  <clinit>()- using JDK 1.4 java.sql.Timestamp handling
+INFO   2016-03-17 19:27:37: org.hibernate.annotations.common.Version line:14  <clinit>()- Hibernate Commons Annotations 3.1.0.GA
+INFO   2016-03-17 19:27:37: org.hibernate.ejb.Version line:16  <clinit>()- Hibernate EntityManager 3.4.0.GA
+INFO   2016-03-17 19:27:37: org.hibernate.ejb.Ejb3Configuration line:315  configure()- Processing PersistenceUnitInfo [
+	name: exam
+	...]
+INFO   2016-03-17 19:27:37: org.hibernate.cfg.AnnotationBinder line:419  bindClass()- Binding entity from annotated class: com.exam.bean.ManageOpBasic
+INFO   2016-03-17 19:27:37: org.hibernate.cfg.annotations.EntityBinder line:422  bindTable()- Bind entity com.exam.bean.ManageOpBasic on table t_manage_op_basic
+INFO   2016-03-17 19:27:37: org.hibernate.cfg.AnnotationConfiguration line:369  secondPassCompile()- Hibernate Validator not found: ignoring
+INFO   2016-03-17 19:27:37: org.hibernate.cfg.search.HibernateSearchEventListenerRegister line:53  enableHibernateSearch()- Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+INFO   2016-03-17 19:27:38: org.hibernate.connection.ConnectionProviderFactory line:95  newConnectionProvider()- Initializing connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+INFO   2016-03-17 19:27:38: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider line:37  configure()- Using provided datasource
+INFO   2016-03-17 19:27:38: com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource line:462  getPoolManager()- Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeby99f10ptdxh1q2ncwb|3dd94153, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.gjt.mm.mysql.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeby99f10ptdxh1q2ncwb|3dd94153, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, jdbcUrl -> jdbc:mysql://localhost:3306/baoguan?useUnicode=true&characterEncoding=UTF-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 300, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 1, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:116  buildSettings()- RDBMS: MySQL, version: 5.6.26
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:117  buildSettings()- JDBC driver: MySQL Connector Java, version: mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )
+INFO   2016-03-17 19:27:38: org.hibernate.dialect.Dialect line:175  <init>()- Using dialect: org.hibernate.dialect.MySQLDialect
+INFO   2016-03-17 19:27:38: org.hibernate.transaction.TransactionFactoryFactory line:62  buildTransactionFactory()- Transaction strategy: org.hibernate.transaction.JDBCTransactionFactory
+INFO   2016-03-17 19:27:38: org.hibernate.transaction.TransactionManagerLookupFactory line:80  getTransactionManagerLookup()- No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:170  buildSettings()- Automatic flush during beforeCompletion(): disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:174  buildSettings()- Automatic session close at end of transaction: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:181  buildSettings()- JDBC batch size: 10
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:184  buildSettings()- JDBC batch updates for versioned data: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:189  buildSettings()- Scrollable result sets: enabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:197  buildSettings()- JDBC3 getGeneratedKeys(): enabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:201  buildSettings()- JDBC result set fetch size: 18
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:205  buildSettings()- Connection release mode: auto
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:229  buildSettings()- Maximum outer join fetch depth: 3
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:232  buildSettings()- Default batch fetch size: 1
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:236  buildSettings()- Generate SQL with comments: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:240  buildSettings()- Order SQL updates by primary key: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:244  buildSettings()- Order SQL inserts for batching: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:420  createQueryTranslatorFactory()- Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+INFO   2016-03-17 19:27:38: org.hibernate.hql.ast.ASTQueryTranslatorFactory line:47  <init>()- Using ASTQueryTranslatorFactory
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:252  buildSettings()- Query language substitutions: {}
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:257  buildSettings()- JPA-QL strict compliance: enabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:262  buildSettings()- Second-level cache: enabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:266  buildSettings()- Query cache: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:405  createRegionFactory()- Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:276  buildSettings()- Optimize cache for minimal puts: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:285  buildSettings()- Structured second-level cache entries: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:305  buildSettings()- Echoing all SQL to stdout
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:314  buildSettings()- Statistics: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:318  buildSettings()- Deleted entity synthetic identifier rollback: disabled
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:333  buildSettings()- Default entity-mode: pojo
+INFO   2016-03-17 19:27:38: org.hibernate.cfg.SettingsFactory line:337  buildSettings()- Named query checking : enabled
+INFO   2016-03-17 19:27:38: org.hibernate.impl.SessionFactoryImpl line:187  <init>()- building session factory
+INFO   2016-03-17 19:27:38: org.hibernate.impl.SessionFactoryObjectFactory line:105  addInstance()- Not binding factory to JNDI, no JNDI name configured
+INFO   2016-03-17 19:27:38: org.hibernate.tool.hbm2ddl.SchemaUpdate line:138  execute()- Running hbm2ddl schema update
+INFO   2016-03-17 19:27:38: org.hibernate.tool.hbm2ddl.SchemaUpdate line:149  execute()- fetching database metadata
+INFO   2016-03-17 19:27:38: org.hibernate.tool.hbm2ddl.SchemaUpdate line:161  execute()- updating schema
+INFO   2016-03-17 19:27:38: org.hibernate.tool.hbm2ddl.TableMetadata line:62  <init>()- table found: baoguan.t_manage_op_basic
+INFO   2016-03-17 19:27:38: org.hibernate.tool.hbm2ddl.TableMetadata line:63  <init>()- columns: [id, op_id, status, is_active, real_name, login_name, op_type, create_time, password, op_name]
+INFO   2016-03-17 19:27:38: org.hibernate.tool.hbm2ddl.TableMetadata line:65  <init>()- foreign keys: []
+INFO   2016-03-17 19:27:38: org.hibernate.tool.hbm2ddl.TableMetadata line:66  <init>()- indexes: [primary]
+INFO   2016-03-17 19:27:38: org.hibernate.tool.hbm2ddl.SchemaUpdate line:183  execute()- schema update complete
+INFO   2016-03-17 19:27:38: org.springframework.beans.factory.support.DefaultListableBeanFactory line:596  preInstantiateSingletons()- Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c4cd88f: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 19:27:39: org.springframework.context.support.GenericApplicationContext line:1042  doClose()- Closing org.springframework.context.support.GenericApplicationContext@7d612fb3: startup date [Thu Mar 17 19:27:36 CST 2016]; root of context hierarchy
+INFO   2016-03-17 19:27:39: org.springframework.beans.factory.support.DefaultListableBeanFactory line:444  destroySingletons()- Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4c4cd88f: defining beans [org.springframework.aop.config.internalAutoProxyCreator,manageOpServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,entityManagerFactory,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+INFO   2016-03-17 19:27:39: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean line:441  destroy()- Closing JPA EntityManagerFactory for persistence unit 'exam'
+INFO   2016-03-17 19:27:39: org.hibernate.impl.SessionFactoryImpl line:805  close()- closing
