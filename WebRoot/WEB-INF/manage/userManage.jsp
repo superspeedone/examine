@@ -236,9 +236,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                     <h4 class="modal-title">提示</h4>
                 </div>
-                <div class="modal-body"></div>
+                <div class="modal-body"><input id="id" type="hidden" value=""><p></p></div>
                 <div class="modal-footer">
                     <button id="btnOK" data-dismiss="modal" class="btn btn-default" type="button">确定</button>
+                    <button id="btnCancle" data-dismiss="modal" class="btn btn-default" type="button" >确定</button>
                 </div>
             </div>
         </div>

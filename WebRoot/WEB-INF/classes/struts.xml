@@ -12,14 +12,18 @@
       
 		<action name="users" class="userManageAciton" >
 			<result name="list">/WEB-INF/manage/userManage.jsp</result>
+			<result name="addPage" >/WEB-INF/manage/userAdd.jsp</result>
+			<result name="editPage" >/WEB-INF/manage/userEdit.jsp</result>
 			<result name="delete" type="stream">
 				<param name="contentType">text/plain</param>
 				<param name="inputName">responseMsg</param>
 			</result>
-			<result name="addPage" >/WEB-INF/manage/userAdd.jsp</result>
-			<result name="editPage" >/WEB-INF/manage/userEdit.jsp</result>
 		</action>
 
+	</package>
+	
+	<package name="studentAction"  namespace="/student" extends="struts-default">
+      
 	</package>
 	
 </struts>

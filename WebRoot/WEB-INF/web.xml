@@ -76,7 +76,7 @@
 	<!-- 缓存路径 -->
 	<filter-mapping>
 		<filter-name>CacheFilter</filter-name>
-		<url-pattern>/product/list/*</url-pattern>
+		<url-pattern>/manage/users.action</url-pattern>
 	</filter-mapping>
 
 	<!-- 延迟加载 -->
