@@ -12,6 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.exam.bean.base.QueryResult;
 import com.exam.bean.manage.ManageOpBasic;
+import com.exam.bean.student.Sex;
 import com.exam.service.manage.AcountService;
 import com.exam.utils.MD5;
 
@@ -48,6 +49,11 @@ public class ManageTest {
 	@Test
 	public void delete() {
 		acountService.delete(1);
+	}
+	
+	@Test
+	public void testEnum(){
+		System.out.println(Sex.MAN.getName());
 	}
 
 

@@ -14,6 +14,15 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+  <servlet>
+    <servlet-name>SecurityCode</servlet-name>
+    <servlet-class>com.exam.servlet.SecurityCode</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SecurityCode</servlet-name>
+    <url-pattern>/servlet/SecurityCode</url-pattern>
+  </servlet-mapping>
 
 	<!-- 配置CharacterEncoding，设置字符集 -->
 	<filter>
