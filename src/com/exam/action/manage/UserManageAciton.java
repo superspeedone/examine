@@ -2,14 +2,12 @@ package com.exam.action.manage;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
-
+import java.util.List;
 import javax.annotation.Resource;
-
 import org.apache.struts2.ServletActionContext;
-import org.aspectj.weaver.patterns.ThisOrTargetAnnotationPointcut;
 import org.springframework.stereotype.Controller;
-
 import com.exam.bean.base.PageView;
 import com.exam.bean.manage.ManageOpBasic;
 import com.exam.service.manage.AcountService;
@@ -23,6 +21,12 @@ public class UserManageAciton extends ActionSupport {
 	private String real_name;
 	private String password;
 	private String op_type;
+	//按姓名查询
+	private String qname="";
+	//按分类查询
+	private String qmanager="N";  //查询管理员
+	private String qteacher="N";   //查询教师
+	private String qstudent="N";  //查询学生
 	private int page=1;
 	private int id;
 	
@@ -34,12 +38,39 @@ public class UserManageAciton extends ActionSupport {
 	 */
 	@Override
 	public String execute() {
+		System.out.println("********"+ServletActionContext.getRequest().getParameter("qmanager"));
+		StringBuffer jpql = new StringBuffer("o.is_active=?1");
+		List<Object> params = new ArrayList<Object>();
+		params.add("Y");
+		if(!qname.trim().equals("")){
+			jpql.append(" and o.real_name like ?"+ (params.size()+1));
+			params.add("%"+ qname+ "%");
+		}
+		//分类查询
+		if(qmanager.equals("Y")){
+			jpql.append(" and o.op_type = ?"+ (params.size()+1));
+			params.add("0");
+		}else if(qteacher.equals("Y")){
+			jpql.append(" and o.op_type = ?"+ (params.size()+1));
+			params.add("1");
+		}else if(qstudent.equals("Y")){
+			jpql.append(" and o.op_type = ?"+ (params.size()+1));
+			params.add("2");
+		}
 		PageView<ManageOpBasic> pageView = new PageView<ManageOpBasic>(6, getPage());
 		LinkedHashMap<String, String> orderby = new LinkedHashMap<String, String>();
 		orderby.put("real_name", "asc");
 		pageView.setQueryResult(acountService.getScrollData(pageView.getFirstResult(), 
-				pageView.getMaxresult(), orderby));
+				pageView.getMaxresult(), jpql.toString(), params.toArray(), orderby));
+		if((pageView.getCurrentpage()>pageView.getTotalpage()) && (pageView.getTotalpage()>0)){
+			pageView = new PageView<ManageOpBasic>(6, 1);
+			pageView.setQueryResult(acountService.getScrollData(pageView.getFirstResult(), 
+			pageView.getMaxresult(), jpql.toString(), params.toArray(), orderby));
+		}
 		ServletActionContext.getRequest().setAttribute("pageView", pageView);
+		ServletActionContext.getRequest().setAttribute("qmanager", qmanager);
+		ServletActionContext.getRequest().setAttribute("qteacher", qteacher);
+		ServletActionContext.getRequest().setAttribute("qstudent", qstudent);
 		return "list";
 	}
 	
@@ -167,6 +198,38 @@ public class UserManageAciton extends ActionSupport {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public String getQname() {
+		return qname;
+	}
+
+	public void setQname(String qname) {
+		this.qname = qname;
+	}
+
+	public String getQmanager() {
+		return qmanager;
+	}
+
+	public void setQmanager(String qmanager) {
+		this.qmanager = qmanager;
+	}
+
+	public String getQteacher() {
+		return qteacher;
+	}
+
+	public void setQteacher(String qteacher) {
+		this.qteacher = qteacher;
+	}
+
+	public String getQstudent() {
+		return qstudent;
+	}
+
+	public void setQstudent(String qstudent) {
+		this.qstudent = qstudent;
 	}
 	
 }

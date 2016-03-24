@@ -130,16 +130,55 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
               <div class="row">
                   <div class="col-lg-12">
                       <section class="panel">
+                          <form action="manage/users.action"  method="post"  role="form">
                           <div id="sample_1_wrapper" class="dataTables_wrapper form-inline" role="grid">
 	                          <div class="row">
 				                 <div class="col-sm-12">
-				                   <div class="dataTables_filter" id="manageOpbasic_search">
-				                          <input type="text" aria-controls="sample_1" class="form-control">
-				                    </div>
 				                    <div class="dataTables_filter" id="manageOpbasic_search">
-				                          <button type="button" class="btn btn-success"><i class="icon-eye-open"></i>  查询</button>
-				                          <lable>${msg }</lable>
-				                    </div>     
+				                          <input name="qname" value="${qname}" type="text" placeholder="输入姓名查询" aria-controls="sample_1" class="form-control"/>
+				                    </div>
+				                    <div class="dataTables_filter" id="searchbtn">
+				                          <button name="query" type="submit" class="btn btn-success"><i class="icon-eye-open"></i>  查询</button>
+				                    </div> 
+				                     <div class="dataTables_filter">
+				                          <h4 class="query-by-stragetory" >分类</h4>
+				                    </div>
+				                    <div class="dataTables_filter" id="manageOpbasic_class">
+				                           <button name="qmanager" type="button" class="btn btn-warning" 
+				                                  onclick="javascript:setQueryParam('qteacher','qstudent',this)">
+						                          <c:if test="${qmanager=='Y'}">
+						                                  <i class="icon-ok" style="display:line;"></i>
+						                          </c:if>
+						                          <c:if test="${qmanager=='N'}">
+						                                  <i class="icon-ok" style="display:none;"></i>
+						                          </c:if>管理员
+				                          </button>
+				                          <input id="qmanager" name="qmanager" type="hidden" value="${qmanager}" />
+				                    </div> 
+				                    <div class="dataTables_filter" id="manageOpbasic_class">
+				                          <button name="qteacher" type="button" class="btn btn-danger" 
+				                               onclick="javascript:setQueryParam('qmanager','qstudent',this)">
+						                       <c:if test="${qteacher=='Y'}">
+						                           <i class="icon-ok"  style="display:line;"></i>
+					                           </c:if>
+					                           <c:if test="${qteacher=='N'}">
+						                           <i class="icon-ok"  style="display:none;"></i>
+					                           </c:if>教师
+					                      </button>
+				                          <input id="qteacher" name="qteacher" type="hidden" value="${qteacher}" />
+				                    </div> 
+				                    <div class="dataTables_filter" id="manageOpbasic_class">
+				                          <button name="qstudent" type="button" class="btn btn-success" 
+				                               onclick="javascript:setQueryParam('qmanager','qteacher',this)">
+				                               <c:if test="${qstudent=='Y'}">
+				                                   <i class="icon-ok" style="display:line;"></i>
+				                               </c:if>
+				                               <c:if test="${qstudent=='N'}">
+				                                   <i class="icon-ok" style="display:none;"></i>
+				                               </c:if>学生
+				                          </button>
+				                          <input id="qstudent" name="qstudent" type="hidden" value="${qstudent}" />
+				                    </div>    
 				                    <div class="dataTables_records" id="manageOpbasic_records" >
 				                        <span class="label label-primary">
 				                            共 ${pageView.totalpage} 页 - ${pageView.totalrecord} 条记录</span>
@@ -212,12 +251,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		                                                 <li><a href="manage/users.action?page=${pageView.totalpage}">尾页</a></li>
 												   </c:otherwise>  
 											  </c:choose>
-		                                      
 		                                  </ul>
 	                                   </div>
 	                               </div>
 	                           </div>    
                           </div>
+                          </form>
                       </section>
                   </div>
               </div>
@@ -248,7 +287,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-
 
     <!--common script for all pages-->
     <script src="js/common-scripts.js"></script>

@@ -1,5 +1,6 @@
 package junit.test;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
@@ -10,6 +11,7 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.exam.bean.base.PageView;
 import com.exam.bean.base.QueryResult;
 import com.exam.bean.manage.ManageOpBasic;
 import com.exam.bean.student.Sex;
@@ -21,15 +23,25 @@ import com.exam.utils.MD5;
 public class ManageTest {
 	@Resource(name="acountServiceImpl")
 	private AcountService acountService;
+	private String qname="张飞";
 
 	@Test
 	public void query() {
+		StringBuffer jpql = new StringBuffer("o.is_active=?1");
+		List<Object> params = new ArrayList<Object>();
+		params.add("Y");
+		if(!qname.trim().equals("")){
+			jpql.append(" and o.real_name like ?"+ (params.size()+1));
+			params.add("%"+ qname+ "%");
+		}
+		PageView<ManageOpBasic> pageView = new PageView<ManageOpBasic>(6, 1);
 		LinkedHashMap<String, String> orderby = new LinkedHashMap<String, String>();
-		orderby.put("real_name", "desc");
-		QueryResult<ManageOpBasic> queryResult = acountService.getScrollData(0, 6, orderby);
-		List<ManageOpBasic> manageOpBasicsList = queryResult.getResultlist();
-		for (int i = 0; i < manageOpBasicsList.size(); i++) {
-			System.out.println("------"+manageOpBasicsList.get(i).getReal_name());
+		orderby.put("real_name", "asc");
+		pageView.setQueryResult(acountService.getScrollData(pageView.getFirstResult(), 
+				pageView.getMaxresult(), jpql.toString(), params.toArray(), orderby));
+		
+		for (ManageOpBasic s  : pageView.getRecords()) {
+			System.out.println("******************"+s.getLogin_name());
 		}
 	}
 	

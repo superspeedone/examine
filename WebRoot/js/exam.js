@@ -39,3 +39,14 @@ function deluser(id) {
 	$(".modal-footer button:eq(1)").hide();
 	$("#myModal").modal('show');
 }
+
+function setQueryParam(id1, id2, element){
+	if ($(element).next().val()=="Y"){
+		$(element).next().val("N");
+	}else if ($(element).next().val()=="N"){
+		$(element).next().val("Y");
+	}
+	$("#"+id1).val("N");
+	$("#"+id2).val("N");
+	$("form").submit();
+}
