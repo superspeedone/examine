@@ -12,3 +12,8 @@ update history
 
            update query by real_name
            
+2016-03-26 optimize exam.js 
+           
+           add teacher entity,student entity,class entity 
+
+           update login funciton page
