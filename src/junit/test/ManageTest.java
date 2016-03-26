@@ -16,6 +16,7 @@ import com.exam.bean.base.QueryResult;
 import com.exam.bean.manage.ManageOpBasic;
 import com.exam.bean.student.Sex;
 import com.exam.service.manage.AcountService;
+import com.exam.service.manage.LogService;
 import com.exam.utils.MD5;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -23,6 +24,8 @@ import com.exam.utils.MD5;
 public class ManageTest {
 	@Resource(name="acountServiceImpl")
 	private AcountService acountService;
+	@Resource(name="logServiceImpl")
+	private LogService logService;
 	private String qname="张飞";
 
 	@Test
@@ -68,5 +71,9 @@ public class ManageTest {
 		System.out.println(Sex.MAN.getName());
 	}
 
+	@Test
+	public void log(){
+		logService.insertLog("0", "登陆成功，当前用户：孙悟空", 01, "孙悟空");
+	}
 
 }

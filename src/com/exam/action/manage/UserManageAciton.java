@@ -38,7 +38,6 @@ public class UserManageAciton extends ActionSupport {
 	 */
 	@Override
 	public String execute() {
-		System.out.println("********"+ServletActionContext.getRequest().getParameter("qmanager"));
 		StringBuffer jpql = new StringBuffer("o.is_active=?1");
 		List<Object> params = new ArrayList<Object>();
 		params.add("Y");

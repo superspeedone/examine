@@ -9,21 +9,27 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+/**
+ * 用户
+ * @author yww
+ *
+ */
+
 @Entity(name = "t_manage_op_basic")
 public class ManageOpBasic implements Serializable {
 
 	private static final long serialVersionUID = 2605077263084816714L;
 
 	private Integer id;
-	private String login_name;
-	private String op_type;
-	private String password;
-	private String real_name;
+	private String login_name;  //登陆名
+	private String op_type;  //用户类型
+	private String password;  
+	private String real_name; //真实姓名
 	private Date create_time = new Date();
-	private Integer op_id;
-	private String op_name;
-	private String status = "0";
-	private String is_active = "Y";
+	private Integer op_id; //操作员ID
+	private String op_name; //操作员姓名
+	private String status = "0";  //状态 '0'：正常，'1'：被禁用，'3'：注销
+	private String is_active = "Y"; //是否有效
 
 	@Id @GeneratedValue
 	public Integer getId() {

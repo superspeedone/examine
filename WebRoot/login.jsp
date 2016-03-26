@@ -38,20 +38,31 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
       <form class="form-signin" action="index.jsp">
         <h2 class="form-signin-heading">考试系统登录</h2>
-        <div class="login-wrap ">
-            <input id="username" type="text" class="form-control" placeholder="登录名" autofocus minlength="1" required="">
-            <input id="password" type="password" class="form-control" placeholder="密码" minlength="1" required="">
+        <div class="login-wrap">
+            <dl>
+                <dt>
+                    <span>用户名：</span>
+                     <input id="username" type="text" class="form-control" placeholder="登录名" autofocus minlength="1" required="">
+                </dt>
+                <dt>
+                    <span>用户名：</span>
+                     <input id="password" type="password" class="form-control" placeholder="密码" minlength="1" required="" >
+                </dt>
+                <dt>
+                    <span>验证码：</span>
+                    <input id="verifycode" type="text" class="form-control" maxlength="4" required="" >
+                    <img id="verifyimg" class="verifycode" alt="验证码" src="servlet/SecurityCode"/>
+                </dt>
+            </dl>
             <label class="checkbox">
-                <input type="checkbox" value="remember-me"> 记住密码
-                <span class="pull-right"> <a href="#"> 忘记密码?</a></span>
-            </label>
+                 <input type="checkbox" value="remember-me"> 记住密码
+	              <span class="pull-right"> <a href="#"> 忘记密码?</a></span>
+	        </label>
             <button class="btn btn-lg btn-login btn-block" type="submit">登  录</button>
-
         </div>
-
       </form>
-
     </div>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/exam.js"></script>
   </body>
 </html>

@@ -17,7 +17,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="考试系统" content="考试系统">
 	<meta http-equiv="keyword" content="考试系统">
 	
-	  <!-- Bootstrap core CSS -->
+	 <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <!--external css-->
@@ -25,12 +25,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
   </head>
   
  <body>
@@ -210,7 +204,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                   <td>
                                       <a class="btn btn-primary btn-sm"  href="manage/users!editUI.action?id=${opBasic.id}">
                                       <i class="icon-edit "></i> 编辑</a>
-                                      <a class="btn btn-danger btn-sm" href="javascript:deluser(${opBasic.id})">
+                                      <a class="btn btn-danger btn-sm" href="javascript:del(${opBasic.id},'manage/users!delete.action')">
                                       <i class="icon-trash "></i> 删除</a>
                                   </td>
                               </tr>
@@ -266,7 +260,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       <!--main content end-->
   </section>
   
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal fade" id="tipDlg" tabindex="-1" role="dialog" aria-labelledby="tipDlgLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -276,7 +270,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <div class="modal-body"><input id="id" type="hidden" value=""><p></p></div>
                 <div class="modal-footer">
                     <button id="btnOK" data-dismiss="modal" class="btn btn-default" type="button">确定</button>
-                    <button id="btnCancle" data-dismiss="modal" class="btn btn-default" type="button" >确定</button>
+                    <button id="btnOK" data-dismiss="modal" class="btn btn-default" type="button" >确定</button>
                 </div>
             </div>
         </div>
