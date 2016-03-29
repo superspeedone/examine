@@ -5,7 +5,7 @@ $("#verifyimg").click(function() {
 });
 
 // 通用查询删除操作
-function delOpt(id, url) {
+function delOpt(table, id, url) {
 	$(".modal-footer button:eq(0)").click(function() {
 		$("#tipDlg").modal('hide');
 		$(".modal-footer button:eq(0)").hide();
@@ -35,13 +35,13 @@ function delOpt(id, url) {
 
 	$(".modal-footer button:eq(1)").click(function() {
 		$("#tipDlg").modal('hide');
-		window.location.reload();
+		//$("#" + table).bootstrapTable('refresh');
 	});
 }
 
 //通用删除
-function del(url, id) {
-	delOpt(url, id);
+function del(table, url, id) {
+	delOpt(table, url, id);
 	$(".modal-body input:eq(0)").val(id);
 	$(".modal-body p").text("确定要删除吗？");
 	$(".modal-footer button:eq(0)").show();
@@ -50,13 +50,18 @@ function del(url, id) {
 }
 
 //通用分类查询
-function setQueryParam(id1, id2, me) {
+function setQueryParam(table, id1, id2, me) {
 	if ($(me).next().val() == "Y") {
 		$(me).next().val("N");
+		$(me).find("i").hide();
 	} else if ($(me).next().val() == "N") {
-		$(me).next().val("Y");
+		$(me).next().val("Y").children().show();
+		$(me).find("i").show();
 	}
 	$("#" + id1).val("N");
+	$("#" + id1).prev().find("i").hide();
 	$("#" + id2).val("N");
-	$("form").submit();
+	$("#" + id2).prev().find("i").hide();
+	//刷新table
+	$("#" + table).bootstrapTable('refresh');
 }

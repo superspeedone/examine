@@ -6,7 +6,28 @@ Website: http://thevectorlab.net/
 */
 
 /* Import fonts */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@font-face {
+    font-family: 'sans-serif';
+    src: url('../fonts/bebas/bebasneue-webfont.eot');
+    src: url('../fonts/bebas/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebas/bebasneue-webfont.woff') format('woff'),
+         url('../fonts/bebas/bebasneue-webfont.ttf') format('truetype'),
+         url('../fonts/bebas/bebasneue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/ptsans/pts55f-webfont.eot');
+    src: url('../fonts/ptsans/pts55f-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ptsans/pts55f-webfont.woff') format('woff'),
+         url('../fonts/ptsans/pts55f-webfont.ttf') format('truetype'),
+         url('../fonts/ptsans/pts55f-webfont.svg#PTSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     color: #797979;
     background: #f1f2f7;
@@ -2756,8 +2777,14 @@ ul.amounts li {
 }
 
 .dataTables_records {
-	margin-top:10px;
+	padding:19px;
     float: right;
+}
+
+.dataTables_records span{
+	padding:9px 14px 10px 14px;
+	font-size:14px;
+	font-weight:normal;
 }
 
 

@@ -13,9 +13,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.exam.bean.base.PageView;
 import com.exam.bean.base.QueryResult;
-import com.exam.bean.manage.ManageOpBasic;
+import com.exam.bean.manage.OpBasic;
 import com.exam.bean.student.Sex;
-import com.exam.service.manage.AcountService;
+import com.exam.service.manage.OpManageService;
 import com.exam.service.manage.LogService;
 import com.exam.utils.MD5;
 
@@ -23,7 +23,7 @@ import com.exam.utils.MD5;
 @ContextConfiguration("classpath:applicationcontext.xml")
 public class ManageTest {
 	@Resource(name="acountServiceImpl")
-	private AcountService acountService;
+	private OpManageService acountService;
 	@Resource(name="logServiceImpl")
 	private LogService logService;
 	private String qname="张飞";
@@ -37,22 +37,22 @@ public class ManageTest {
 			jpql.append(" and o.real_name like ?"+ (params.size()+1));
 			params.add("%"+ qname+ "%");
 		}
-		PageView<ManageOpBasic> pageView = new PageView<ManageOpBasic>(6, 1);
+		PageView<OpBasic> pageView = new PageView<OpBasic>(6, 1);
 		LinkedHashMap<String, String> orderby = new LinkedHashMap<String, String>();
 		orderby.put("real_name", "asc");
 		pageView.setQueryResult(acountService.getScrollData(pageView.getFirstResult(), 
 				pageView.getMaxresult(), jpql.toString(), params.toArray(), orderby));
 		
-		for (ManageOpBasic s  : pageView.getRecords()) {
+		for (OpBasic s  : pageView.getRecords()) {
 			System.out.println("******************"+s.getLogin_name());
 		}
 	}
 	
 	@Test
 	public void save() {
-		ManageOpBasic manageOpBasic;
+		OpBasic manageOpBasic;
 		for (int i = 0; i < 30; i++) {
-			manageOpBasic = new ManageOpBasic();
+			manageOpBasic = new OpBasic();
 			manageOpBasic.setLogin_name("admin"+(i+50));
 			manageOpBasic.setPassword(MD5.MD5Encode("11111111"));
 			manageOpBasic.setReal_name("测试"+(i+50));

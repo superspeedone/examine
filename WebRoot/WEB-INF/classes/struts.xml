@@ -6,18 +6,22 @@
 <struts>
 
 	<!-- 更改struts2请求Action的后缀名，默认为action。若想去掉后缀，设为","即可
-	<constant name="struts.action.extension" value=","></constant>--> 
+	<constant name="struts.action.extension" value=","></constant>-->
 
-	<package name="manageAction"  namespace="/manage" extends="struts-default">
+	<package name="opManage"  namespace="/manage/op" extends="struts-default">
       
-		<action name="users" class="userManageAciton" >
-			<result name="list">/WEB-INF/manage/userManage.jsp</result>
-			<result name="addPage" >/WEB-INF/manage/userAdd.jsp</result>
-			<result name="editPage" >/WEB-INF/manage/userEdit.jsp</result>
+		<action name="list" class="opManageAciton" >
+		    <result name="listUI">/WEB-INF/manage/opManage.jsp</result>
+			<result name="list" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="inputName">responseMsg</param>
+			</result>
 			<result name="delete" type="stream">
 				<param name="contentType">text/plain</param>
 				<param name="inputName">responseMsg</param>
 			</result>
+			<result name="addUI" >/WEB-INF/manage/opAdd.jsp</result>
+			<result name="editUI" >/WEB-INF/manage/opEdit.jsp</result>
 		</action>
 
 	</package>

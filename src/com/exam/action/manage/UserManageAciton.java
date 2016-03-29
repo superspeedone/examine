@@ -9,11 +9,10 @@ import javax.annotation.Resource;
 import org.apache.struts2.ServletActionContext;
 import org.springframework.stereotype.Controller;
 import com.exam.bean.base.PageView;
-import com.exam.bean.manage.ManageOpBasic;
-import com.exam.service.manage.AcountService;
+import com.exam.bean.manage.OpBasic;
+import com.exam.service.manage.OpManageService;
 import com.opensymphony.xwork2.ActionSupport;
 
-@Controller("userManageAciton")
 public class UserManageAciton extends ActionSupport {
 	private static final long serialVersionUID = 1L;
 	private InputStream responseMsg;
@@ -31,7 +30,7 @@ public class UserManageAciton extends ActionSupport {
 	private int id;
 	
 	@Resource(name="acountServiceImpl")
-	private AcountService acountService;
+	private OpManageService acountService;
     
 	/**
 	 * 用户查询
@@ -56,13 +55,13 @@ public class UserManageAciton extends ActionSupport {
 			jpql.append(" and o.op_type = ?"+ (params.size()+1));
 			params.add("2");
 		}
-		PageView<ManageOpBasic> pageView = new PageView<ManageOpBasic>(6, getPage());
+		PageView<OpBasic> pageView = new PageView<OpBasic>(6, getPage());
 		LinkedHashMap<String, String> orderby = new LinkedHashMap<String, String>();
 		orderby.put("real_name", "asc");
 		pageView.setQueryResult(acountService.getScrollData(pageView.getFirstResult(), 
 				pageView.getMaxresult(), jpql.toString(), params.toArray(), orderby));
 		if((pageView.getCurrentpage()>pageView.getTotalpage()) && (pageView.getTotalpage()>0)){
-			pageView = new PageView<ManageOpBasic>(6, 1);
+			pageView = new PageView<OpBasic>(6, 1);
 			pageView.setQueryResult(acountService.getScrollData(pageView.getFirstResult(), 
 			pageView.getMaxresult(), jpql.toString(), params.toArray(), orderby));
 		}
@@ -104,7 +103,7 @@ public class UserManageAciton extends ActionSupport {
 	 * @return
 	 */
 	public String add() throws Exception {
-		ManageOpBasic manageOpBasic = new ManageOpBasic();
+		OpBasic manageOpBasic = new OpBasic();
 		manageOpBasic.setLogin_name(this.login_name);
 		manageOpBasic.setReal_name(this.real_name);
 		manageOpBasic.setPassword(this.password);
@@ -119,7 +118,7 @@ public class UserManageAciton extends ActionSupport {
 	 * @return
 	 */
 	public String editUI(){
-		ManageOpBasic manageOpBasic = acountService.find(this.id);
+		OpBasic manageOpBasic = acountService.find(this.id);
 		this.setLogin_name(manageOpBasic.getLogin_name());
 		this.setReal_name(manageOpBasic.getReal_name());
 		this.setPassword(manageOpBasic.getPassword());
@@ -133,7 +132,7 @@ public class UserManageAciton extends ActionSupport {
 	 */
 	public String edit(){
 		System.out.println(this.id);
-		ManageOpBasic manageOpBasic = acountService.find(this.id);
+		OpBasic manageOpBasic = acountService.find(this.id);
 		manageOpBasic.setLogin_name(this.login_name);
 		manageOpBasic.setReal_name(this.real_name);
 		manageOpBasic.setPassword(this.password);

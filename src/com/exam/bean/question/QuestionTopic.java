@@ -2,8 +2,12 @@ package com.exam.bean.question;
 
 import java.io.Serializable;
 import java.util.Date;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity(name = "t_question_topic_basic")
 public class QuestionTopic implements Serializable {
@@ -27,7 +31,11 @@ public class QuestionTopic implements Serializable {
 	private String is_share; // '0:否 1:是'
 	private String topic_level; // '0:超级简单 1:简单 2:正常 3:有难度 4:很难'
 	private Integer op_id;
+	private String op_real_name;
+	private String is_active="0"; // '0:有效 1:无效';
+	private Integer pra_up_topic_id; // '如果本题是实务I综合题的一部分，则用此关联'
 
+	@Id @GeneratedValue
 	public Integer getId() {
 		return id;
 	}
@@ -36,10 +44,7 @@ public class QuestionTopic implements Serializable {
 		this.id = id;
 	}
 
-	private String op_real_name;
-	private String is_active; // '0:有效 1:无效';
-	private Integer pra_up_topic_id; // '如果本题是实务I综合题的一部分，则用此关联'
-
+	@Column(length=100,nullable=false)
 	public String getTopic_name() {
 		return topic_name;
 	}
@@ -48,6 +53,7 @@ public class QuestionTopic implements Serializable {
 		this.topic_name = topic_name;
 	}
 
+	@Column(length=2,nullable=false)
 	public String getTopic_type() {
 		return topic_type;
 	}
@@ -56,6 +62,7 @@ public class QuestionTopic implements Serializable {
 		this.topic_type = topic_type;
 	}
 
+	@Column(length=100)
 	public String getTopic_tags() {
 		return topic_tags;
 	}
@@ -64,6 +71,7 @@ public class QuestionTopic implements Serializable {
 		this.topic_tags = topic_tags;
 	}
 
+	@Column(nullable=true)
 	public Integer getCourse_id() {
 		return course_id;
 	}
@@ -72,6 +80,7 @@ public class QuestionTopic implements Serializable {
 		this.course_id = course_id;
 	}
 
+	@Column(length=50)
 	public String getCourse_name() {
 		return course_name;
 	}
@@ -80,6 +89,7 @@ public class QuestionTopic implements Serializable {
 		this.course_name = course_name;
 	}
 
+	@Column(length=65535)
 	public String getTopic_desc() {
 		return topic_desc;
 	}
@@ -88,6 +98,7 @@ public class QuestionTopic implements Serializable {
 		this.topic_desc = topic_desc;
 	}
 
+	@Column(length=100)
 	public String getRemark() {
 		return remark;
 	}
@@ -96,6 +107,7 @@ public class QuestionTopic implements Serializable {
 		this.remark = remark;
 	}
 
+	@Column(length=100)
 	public String getReserve1() {
 		return reserve1;
 	}
@@ -104,6 +116,7 @@ public class QuestionTopic implements Serializable {
 		this.reserve1 = reserve1;
 	}
 
+	@Column(length=100)
 	public String getReserve2() {
 		return reserve2;
 	}
@@ -112,6 +125,7 @@ public class QuestionTopic implements Serializable {
 		this.reserve2 = reserve2;
 	}
 
+	@Column(length=100)
 	public String getReserve3() {
 		return reserve3;
 	}
@@ -120,6 +134,7 @@ public class QuestionTopic implements Serializable {
 		this.reserve3 = reserve3;
 	}
 
+	@Column(length=65535)
 	public String getAnswer_desc() {
 		return answer_desc;
 	}
@@ -128,6 +143,7 @@ public class QuestionTopic implements Serializable {
 		this.answer_desc = answer_desc;
 	}
 
+	@Column(nullable=false)
 	public Integer getUp_topic_id() {
 		return up_topic_id;
 	}
@@ -136,6 +152,7 @@ public class QuestionTopic implements Serializable {
 		this.up_topic_id = up_topic_id;
 	}
 
+	@Temporal(TemporalType.TIMESTAMP)
 	public Date getCreate_time() {
 		return create_time;
 	}
@@ -144,6 +161,7 @@ public class QuestionTopic implements Serializable {
 		this.create_time = create_time;
 	}
 
+	@Column(length=1,nullable=false)
 	public String getIs_random() {
 		return is_random;
 	}
@@ -152,6 +170,7 @@ public class QuestionTopic implements Serializable {
 		this.is_random = is_random;
 	}
 
+	@Column(length=1,nullable=false)
 	public String getIs_share() {
 		return is_share;
 	}
@@ -160,6 +179,7 @@ public class QuestionTopic implements Serializable {
 		this.is_share = is_share;
 	}
 
+	@Column(length=1)
 	public String getTopic_level() {
 		return topic_level;
 	}
@@ -168,6 +188,7 @@ public class QuestionTopic implements Serializable {
 		this.topic_level = topic_level;
 	}
 
+	@Column(nullable=true)
 	public Integer getOp_id() {
 		return op_id;
 	}
@@ -176,6 +197,7 @@ public class QuestionTopic implements Serializable {
 		this.op_id = op_id;
 	}
 
+	@Column(length=30)
 	public String getOp_real_name() {
 		return op_real_name;
 	}
@@ -184,6 +206,7 @@ public class QuestionTopic implements Serializable {
 		this.op_real_name = op_real_name;
 	}
 
+	@Column(length=1,nullable=false)
 	public String getIs_active() {
 		return is_active;
 	}
@@ -192,6 +215,7 @@ public class QuestionTopic implements Serializable {
 		this.is_active = is_active;
 	}
 
+	@Column(nullable=false)
 	public Integer getPra_up_topic_id() {
 		return pra_up_topic_id;
 	}
