@@ -102,6 +102,7 @@ var TableInit = function() {
 			qt: $("#qt").val(),
 			qs: $("#qs").val()
 		};
+		//return $.extend({}, temp, dParams);  合并json元素，把后面的合并到前面
 		return temp;
 	};
 	

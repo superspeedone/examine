@@ -132,10 +132,10 @@ public class OpManageAciton extends ActionSupport {
 	public String delete() throws Exception {
 		try {
 			opManageService.delete(getId());
-			this.setResponseMsg(new ByteArrayInputStream("{\"message\":\"success\"}".toString()
+			this.setResponseMsg(new ByteArrayInputStream("{\"eMessage\":\"success\"}".toString()
 					.getBytes("utf-8")));
 		} catch (Exception e) {
-			this.setResponseMsg(new ByteArrayInputStream("{\"message\":\"falure\"}".toString()
+			this.setResponseMsg(new ByteArrayInputStream("{\"eMessage\":\"failed\"}".toString()
 					.getBytes("utf-8")));
 			e.printStackTrace();
 		}
@@ -183,7 +183,6 @@ public class OpManageAciton extends ActionSupport {
 	 * @return
 	 */
 	public String edit(){
-		System.out.println(this.id);
 		OpBasic manageOpBasic = opManageService.find(opVO.getId());
 		manageOpBasic.setLogin_name(opVO.getLogin_name());
 		manageOpBasic.setReal_name(opVO.getReal_name());

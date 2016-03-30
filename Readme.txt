@@ -17,3 +17,7 @@ update history
            add teacher entity,student entity,class entity 
 
            update login funciton page
+
+2016-03-30 optimize the bootstrap table, very simply to initialize and create a table
+
+           BUG  the delete js has something wrong

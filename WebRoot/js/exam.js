@@ -17,10 +17,10 @@ function delOpt(table, id, url) {
 			dataType : "json",
 			success : function(data, textStatus) {
 				if (data) {
-					if (data.message == 'success') {
+					if (data.eMessage == 'success') {
 						$(".modal-body").text("删除成功");
 						$("#tipDlg").modal('show');
-					} else if (data.message == 'falure') {
+					} else if (data.eMessage == 'failed') {
 						$(".modal-body").text("删除失败");
 						$("#tipDlg").modal('show');
 					}
@@ -62,6 +62,12 @@ function setQueryParam(table, id1, id2, me) {
 	$("#" + id1).prev().find("i").hide();
 	$("#" + id2).val("N");
 	$("#" + id2).prev().find("i").hide();
+	
 	//刷新table
 	$("#" + table).bootstrapTable('refresh');
 }
+
+//查询
+$("#query").click(function(){
+    $("#oplist").bootstrapTable('refresh');
+});
