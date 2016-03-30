@@ -167,7 +167,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				                                  <div class="form-group">
 				                                      <label for="inputoptype" class="col-lg-1 control-label">用户类型</label>
 				                                      <div class="col-lg-3">
-				                                         <s:select name="op_type" list="#{'0':'管理员','1':'教师','2':'学生'}"  listKey="key" listValue="value"
+				                                         <s:select name="opVO.op_type" list="#{'0':'管理员','1':'教师','2':'学生'}"  listKey="key" listValue="value"
 															 value="opVO.op_type" cssClass="form-control m-bot6" required="">
 														 </s:select>
 				                                      </div>

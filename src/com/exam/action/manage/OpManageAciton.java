@@ -16,6 +16,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.exam.bean.base.PageView;
 import com.exam.bean.manage.OpBasic;
+import com.exam.service.manage.LogService;
 import com.exam.service.manage.OpManageService;
 import com.exam.utils.Tools;
 import com.exam.vo.manage.OpVO;
@@ -43,7 +44,8 @@ public class OpManageAciton extends ActionSupport {
 	
 	@Resource(name="opManageServiceImpl")
 	private OpManageService opManageService;
-	
+	@Resource(name="logServiceImpl")
+	private LogService logService;
 	/**
 	 * 跳转用户查询界面
 	 */
@@ -132,6 +134,8 @@ public class OpManageAciton extends ActionSupport {
 	public String delete() throws Exception {
 		try {
 			opManageService.delete(getId());
+			//插入操作日志
+			logService.insertLog("0", "用户删除成功，用户ID："+getId(), 01, "管理员");
 			this.setResponseMsg(new ByteArrayInputStream("{\"eMessage\":\"success\"}".toString()
 					.getBytes("utf-8")));
 		} catch (Exception e) {
@@ -161,6 +165,8 @@ public class OpManageAciton extends ActionSupport {
 		manageOpBasic.setPassword(opVO.getPassword());
 		manageOpBasic.setOp_type(opVO.getOp_type());
 		opManageService.save(manageOpBasic);
+		//插入操作日志
+		logService.insertLog("0", "用户添加成功，用户名："+opVO.getLogin_name(), 01, "管理员");
         ServletActionContext.getRequest().setAttribute("eMessage", "添加成功");
 		return "addUI";
 	}
@@ -189,6 +195,8 @@ public class OpManageAciton extends ActionSupport {
 		manageOpBasic.setPassword(opVO.getPassword());
 		manageOpBasic.setOp_type(opVO.getOp_type());
 		opManageService.update(manageOpBasic);
+		//插入操作日志
+		logService.insertLog("0", "用户信息修改成功，用户名：" + opVO.getLogin_name(), 01, "管理员");
 		 ServletActionContext.getRequest().setAttribute("eMessage", "修改成功");
 		return "editUI";
 	}

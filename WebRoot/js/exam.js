@@ -71,3 +71,21 @@ function setQueryParam(table, id1, id2, me) {
 $("#query").click(function(){
     $("#oplist").bootstrapTable('refresh');
 });
+
+//账户管理查询页面
+function queryOp(){
+	$.MyTable.create('oplist', 'manage/op/list!query.action',[ 'real_name', 'qm', 'qt', 'qs'], {},
+	      [ {field : 'rownum', title : '序号' }, { field : 'id', title : 'id', visible : false}, 
+	        { field : 'login_name', title : '登陆名',	sortable: true}, { field : 'real_name', title : '姓名', sortable: true }, 
+	        { field : 'op_type', title : '类别', sortable: true	}, { field : 'create_time', title : '创建时间', sortable: true },
+            { title: '操作', field: 'operation', align: 'center',
+	          formatter:function(value, row, index){  
+	              var e = '<a class="btn btn-primary btn-sm"  href="manage/op/list!editUI.action?id='
+	                + row.id + '"><i class="icon-edit "></i> 编辑</a> ';  
+	              var d = '<a class="btn btn-danger btn-sm" href="javascript:del(\'oplist\',' + row.id
+	                + ',\'manage/op/list!delete.action\')"><i class="icon-trash "></i> 删除</a>';  
+		          return e + d;
+		       } 
+	      }]
+	 );
+}

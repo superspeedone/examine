@@ -26,6 +26,24 @@
 
 	</package>
 	
+	<package name="teacherManage"  namespace="/manage/teacher" extends="struts-default">
+      
+		<action name="list" class="teacherManageAction" >
+		    <result name="listUI">/WEB-INF/manage/teacherManage.jsp</result>
+			<result name="list" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="inputName">responseMsg</param>
+			</result>
+			<result name="delete" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="inputName">responseMsg</param>
+			</result>
+			<result name="addUI" >/WEB-INF/manage/teacherAdd.jsp</result>
+			<result name="editUI" >/WEB-INF/manage/teacherEdit.jsp</result>
+		</action>
+
+	</package>
+	
 	<package name="studentAction"  namespace="/student" extends="struts-default">
       
 	</package>

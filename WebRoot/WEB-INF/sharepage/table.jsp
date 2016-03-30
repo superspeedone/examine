@@ -26,13 +26,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href='http://api.youziku.com/webfont/CSS/56f9115ff629d809ec4a5b6a' rel='stylesheet' type='text/css' />
   </head>
+  
   
  <body>
 
   <section id="container" class="">
       <!--header start-->
-      <header class="header white-bg">
+      <header class="header white-bg" sytle="font-family:'Source-Han-Ligh26215257e51da';">
           <div class="sidebar-toggle-box">
               <div data-original-title="隐藏菜单" data-placement="right" class="icon-reorder tooltips"></div>
           </div>
@@ -125,64 +127,31 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
               <div class="row">
                   <div class="col-lg-12">
                       <section class="panel">
-                          <div id="sample_1_wrapper" class="dataTables_wrapper form-inline" >
+                          <div id="sample_1_wrapper" class="dataTables_wrapper form-inline" role="grid">
 	                          <div id="toolbar" class="row">
-				                 <div class="col-lg-10">
+				                 <div class="col-sm-12">
 				                    <div class="dataTables_filter" id="manageOpbasic_search">
-				                          <input id="real_name" name="real_name" value="${real_name}" type="text" placeholder="输入姓名查询" class="form-control"/>
+				                          <input id="real_name" type="text" placeholder="输入姓名查询" aria-controls="sample_1" class="form-control"/>
 				                    </div>
 				                    <div class="dataTables_filter" id="searchbtn">
-				                          <button id="query" name="query" type="button" class="btn btn-success"><i class="icon-eye-open"></i>  查询</button>
-				                    </div> 
-				                     <div class="dataTables_filter">
-				                          <h4 class="query-by-stragetory" >分类</h4>
+				                          <button id="refresh"  title="refresh" type="button" class="btn btn-success"><i class="icon-eye-open"></i>  查询</button>
 				                    </div>
-				                    <div class="dataTables_filter" >
-				                           <button name="qmanager" type="button" class="btn btn-warning" 
-				                                  onclick="javascript:setQueryParam('oplist','qt','qs',this)">
-				                                  <c:if test="${qm=='Y'}">
-						                                  <i class="icon-ok" style="display:line;"></i>
-						                          </c:if>
-						                          <c:if test="${qm=='N'}">
-						                                  <i class="icon-ok" style="display:none;"></i>
-						                          </c:if>管理员</button>
-				                          <input id="qm" name="qm" type="hidden" value="${qm}" />
+				                    <div class="dataTables_records" id="refresh" title="refresh">
+				                          <span class="label label-primary">
+				                            刷新</span>
 				                    </div> 
-				                    <div class="dataTables_filter">
-				                          <button name="qteacher" type="button" class="btn btn-danger" 
-				                               onclick="javascript:setQueryParam('oplist','qm','qs',this)">
-						                           <c:if test="${qt=='Y'}">
-						                                  <i class="icon-ok" style="display:line;"></i>
-						                          </c:if>
-						                          <c:if test="${qt=='N'}">
-						                                  <i class="icon-ok" style="display:none;"></i>
-						                          </c:if>教师</button>
-				                          <input id="qt" name="qt" type="hidden" value="${qt}" />
+				                       
+				                    <div class="dataTables_records" id="manageOpbasic_records" >
+				                        <span class="label label-primary">
+				                            共 1 页 - 10 条记录</span>
 				                    </div> 
-				                    <div class="dataTables_filter" >
-				                          <button name="qstudent" type="button" class="btn btn-success" 
-				                               onclick="javascript:setQueryParam('oplist','qm','qt',this)">
-				                                   <c:if test="${qs=='Y'}">
-						                                  <i class="icon-ok" style="display:line;"></i>
-						                          </c:if>
-						                          <c:if test="${qs=='N'}">
-						                                  <i class="icon-ok" style="display:none;"></i>
-						                          </c:if>学生</button>
-				                          <input id="qs" name="qs" type="hidden" value="${qs}" />
-				                    </div>   
-				                 </div>
-				                 <div class="col-lg-2">
-				                        <div class="dataTables_records" >
-				                        <a href="manage/op/list!addUI.action"><span class="label label-info"><i class=" icon-user"></i> 添加用户</span></a>
+				                    <div class="dataTables_records" id="manageOpbasic_records" >
+				                        <a href="manage/users!addUI.action"><span class="label label-success">添加用户</span></a>
 				                    </div> 
 				                 </div>
 				              </div>
-                              <!-- oplist table -->
-                              <div class="row">
-	                              <div class="col-sm-12">
-		                               <table id="oplist"></table>
-		                          </div>
-	                          </div>
+				              <!-- oplist table -->
+	                          <table id="oplist"></table>
 	                          <!-- oplist table -->
                           </div>
                       </section>
@@ -215,18 +184,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <script src="js/bootstrap.min.js"></script>
     <script src="assets/bootstrap-table/dist/bootstrap-table.min.js"></script>
     <script src="assets/bootstrap-table/dist/locale/bootstrap-table-zh-CN.js"></script>
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
-
-    <!--common script for all pages-->
     <script src="js/common-scripts.js"></script>
-    
-    <!--custom script-->
-    <script src="js/custom-bootstrap-table.js"></script>
+    <script src="js/table.js"></script>
     <script src="js/exam.js"></script>
-    
     <script type="text/javascript">
-      queryOp();
+      $("#refresh").click(function(){
+          $("#oplist").bootstrapTable('refresh');
+      });
     </script>
   </body>
 </html>
